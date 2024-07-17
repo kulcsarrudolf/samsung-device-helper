@@ -86,7 +86,7 @@ web_modules/
 # Next.js build output
 .next
 out
-
+.tgz
 # Nuxt.js build / generate output
 .nuxt
 dist

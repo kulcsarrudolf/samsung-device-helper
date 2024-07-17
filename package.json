@@ -1,0 +1,53 @@
+{
+  "name": "samsung-device-helper",
+  "version": "0.0.1",
+  "description": "A utility to help you identify Samsung devices",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist/**/*"
+  ],
+  "scripts": {
+    "prebuild": "shx rm -rf dist",
+    "build": "tsc",
+    "pretest": "tsc -p tests",
+    "test": "mocha",
+    "prepack": "yarn run build",
+    "pack": "npm pack"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kulcsarrudolf/samsung-device-helper.git"
+  },
+  "keywords": [
+    "samsung",
+    "device",
+    "helper",
+    "utility",
+    "device identification",
+    "device model",
+    "device name",
+    "device type"
+  ],
+  "author": "Kulcsár Rudolf",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/kulcsarrudolf/samsung-device-helper/issues"
+  },
+  "homepage": "https://kulcsarrudolf.com/samsung-device-helper",
+  "devDependencies": {
+    "@types/chai": "^4.3.5",
+    "@types/mocha": "^10.0.1",
+    "@types/node": "^20.4.2",
+    "@types/sinon": "^10.0.15",
+    "chai": "^4.3.7",
+    "chalk": "^4.1.2",
+    "mocha": "^10.2.0",
+    "shx": "^0.3.4",
+    "sinon": "^15.2.0",
+    "typescript": "^5.1.6"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
