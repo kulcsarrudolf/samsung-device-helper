@@ -34,7 +34,6 @@
   "bugs": {
     "url": "https://github.com/kulcsarrudolf/samsung-device-helper/issues"
   },
-  "homepage": "https://kulcsarrudolf.com/samsung-device-helper",
   "devDependencies": {
     "@types/chai": "^4.3.5",
     "@types/mocha": "^10.0.1",
