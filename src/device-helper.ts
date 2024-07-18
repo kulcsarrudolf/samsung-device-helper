@@ -8,6 +8,14 @@ export const getNameByModel = (model: string): string => {
   return model;
 };
 
+export const getPhoneByModel = (model: string): Device | undefined => {
+  return getAllSamsungPhones().find((phone) => phone.model === model);
+};
+
+export const getDeviceByModel = (model: string): Device | undefined => {
+  return getAllSamsungDevices().find((device) => device.model === model);
+};
+
 export const getAllSamsungPhones = (): Device[] => {
   return [
     {
