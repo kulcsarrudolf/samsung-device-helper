@@ -1,55 +1,30 @@
+import { phones } from "./data/phones";
 import { Device } from "./types";
 
 export const getNameByModel = (model: string): string => {
-  if (model === "SM-G991B") {
-    return "Galaxy S21 5G";
-  }
-
-  return model;
+  return phones.find((phone) => phone?.models?.includes(model))?.name || model;
 };
 
 export const getPhoneByModel = (model: string): Device | undefined => {
-  return getAllSamsungPhones().find((phone) => phone.model === model);
+  return phones.find((phone) => phone?.models?.includes(model));
 };
 
 export const getDeviceByModel = (model: string): Device | undefined => {
-  return getAllSamsungDevices().find((device) => device.model === model);
+  return phones.find((phone) => phone?.models?.includes(model));
 };
 
 export const getAllSamsungPhones = (): Device[] => {
-  return [
-    {
-      model: "SM-G991B",
-      name: "Galaxy S21 5G",
-      releaseDate: "2021-01-29",
-      type: "phone",
-    },
-    // complete full list
-  ];
+  return phones.filter(
+    (phone) => !phone.name.includes("Tab") && !phone.name.includes("Watch")
+  );
 };
 
 export const getAllSamsungTablets = (): Device[] => {
-  return [
-    {
-      model: "SM-T970",
-      name: "Galaxy Tab S7",
-      releaseDate: "2020-08-05",
-      type: "tablet",
-    },
-    // complete full list
-  ];
+  return phones.filter((phone) => phone.name.includes("Tab"));
 };
 
 export const getAllSamsungWatches = (): Device[] => {
-  return [
-    {
-      model: "SM-R800",
-      name: "Galaxy Watch",
-      releaseDate: "2018-08-24",
-      type: "watch",
-    },
-    // complete full list
-  ];
+  return phones.filter((phone) => phone.name.includes("Watch"));
 };
 
 export const getAllSamsungDevices = (): Device[] => {

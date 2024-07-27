@@ -1,4 +1,6 @@
-const phones = [
+import { Device } from "../types";
+
+export const phones: Device[] = [
   {
     name: "Galaxy Z Fold6",
     releaseDate: "07-24-2024",
@@ -110,7 +112,6 @@ const phones = [
       "SM-S928E/DS",
     ],
   },
-  ,
   {
     name: "Galaxy S24+",
     releaseDate: "01-24-2024",
@@ -126,7 +127,6 @@ const phones = [
       "SM-S926E/DS",
     ],
   },
-  ,
   {
     name: "Galaxy S24",
     releaseDate: "01-24-2024",
@@ -186,7 +186,6 @@ const phones = [
       "SM-A156E/DSN",
     ],
   },
-  ,
   {
     name: "Galaxy A15",
     releaseDate: "12-16-2023",
@@ -358,13 +357,11 @@ const phones = [
       "SM-A3460",
     ],
   },
-  ,
   {
     name: "Galaxy M14",
     releaseDate: "03-08-2023",
     models: ["SM-M146B", "SM-M146B/DS", "SM-M146B/DSN"],
   },
-  ,
   {
     name: "Galaxy S23 Ultra",
     releaseDate: "02-17-2023",
@@ -380,7 +377,6 @@ const phones = [
       "SM-S918E/DS",
     ],
   },
-  ,
   {
     name: "Galaxy S23+",
     releaseDate: "02-17-2023",
@@ -396,7 +392,6 @@ const phones = [
       "SM-S916E/DS",
     ],
   },
-  ,
   {
     name: "Galaxy S23",
     releaseDate: "02-17-2023",
@@ -412,7 +407,6 @@ const phones = [
       "SM-S911E/DS",
     ],
   },
-  ,
   {
     name: "Galaxy A14",
     releaseDate: "03-27-2023",
@@ -443,7 +437,6 @@ const phones = [
       "SM-A146M",
     ],
   },
-  ,
   {
     name: "Galaxy F04",
     releaseDate: "01-12-2023",
@@ -594,7 +587,6 @@ const phones = [
       "SM-S536DL",
     ],
   },
-  ,
   {
     name: "Galaxy A33 5G",
     releaseDate: "04-20-2022",
@@ -668,7 +660,6 @@ const phones = [
       "SM-S908E/DS",
     ],
   },
-  ,
   {
     name: "Galaxy S22+ 5G",
     releaseDate: "02-25-2022",
@@ -684,7 +675,6 @@ const phones = [
       "SM-S906E/DS",
     ],
   },
-  ,
   {
     name: "Galaxy S22 5G",
     releaseDate: "02-25-2022",
@@ -700,7 +690,6 @@ const phones = [
       "SM-S901E/DS",
     ],
   },
-  ,
   {
     name: "Galaxy Tab S8 Ultra",
     releaseDate: "04-30-2022",
@@ -733,7 +722,6 @@ const phones = [
       "SM-G990U3",
     ],
   },
-  ,
   {
     name: "Galaxy Tab A8 10.5 (2021)",
     releaseDate: "01-17-2022",

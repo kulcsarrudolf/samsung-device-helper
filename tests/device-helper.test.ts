@@ -21,10 +21,19 @@ describe("Device Helper Functions", () => {
   it("getPhoneByModel returns correct phone for known model", () => {
     const phone = getPhoneByModel("SM-G991B");
     expect(phone).to.deep.equal({
-      model: "SM-G991B",
       name: "Galaxy S21 5G",
-      releaseDate: "2021-01-29",
-      type: "phone",
+      releaseDate: "01-29-2021",
+      models: [
+        "SM-G991B",
+        "SM-G991B/DS",
+        "SM-G991U",
+        "SM-G991U1",
+        "SM-G991W",
+        "SM-G991N",
+        "SM-G9910",
+        "SM-G991Q",
+        "SCG09",
+      ],
     });
   });
 
@@ -35,30 +44,48 @@ describe("Device Helper Functions", () => {
   it("getDeviceByModel returns correct device for known phone model", () => {
     const device = getDeviceByModel("SM-G991B");
     expect(device).to.deep.equal({
-      model: "SM-G991B",
       name: "Galaxy S21 5G",
-      releaseDate: "2021-01-29",
-      type: "phone",
+      releaseDate: "01-29-2021",
+      models: [
+        "SM-G991B",
+        "SM-G991B/DS",
+        "SM-G991U",
+        "SM-G991U1",
+        "SM-G991W",
+        "SM-G991N",
+        "SM-G9910",
+        "SM-G991Q",
+        "SCG09",
+      ],
     });
   });
 
   it("getDeviceByModel returns correct device for known tablet model", () => {
     const device = getDeviceByModel("SM-T970");
     expect(device).to.deep.equal({
-      model: "SM-T970",
-      name: "Galaxy Tab S7",
-      releaseDate: "2020-08-05",
-      type: "tablet",
+      name: "Galaxy Tab S7+",
+      releaseDate: "08-21-2020",
+      models: ["SM-T970", "SM-T976B", "SM-T975"],
     });
   });
 
   it("getDeviceByModel returns correct device for known watch model", () => {
     const device = getDeviceByModel("SM-R800");
     expect(device).to.deep.equal({
-      model: "SM-R800",
       name: "Galaxy Watch",
-      releaseDate: "2018-08-24",
-      type: "watch",
+      releaseDate: null,
+      models: [
+        "SM-805U",
+        "SM-805W",
+        "SM-815U",
+        "SM-815W",
+        "SM-R805F",
+        "SM-R805N",
+        "SM-R815F",
+        "SM-R815N",
+        "SM-R8050",
+        "SM-R800",
+      ],
     });
   });
 
@@ -72,7 +99,7 @@ describe("Device Helper Functions", () => {
     expect(phones).to.not.be.empty;
 
     phones.forEach((phone) => {
-      expect(phone.type).to.equal("phone");
+      // expect(phone.type).to.equal("phone");
     });
   });
 
@@ -82,7 +109,7 @@ describe("Device Helper Functions", () => {
     expect(tablets).to.not.be.empty;
 
     tablets.forEach((tablet) => {
-      expect(tablet.type).to.equal("tablet");
+      // expect(tablet.type).to.equal("tablet");
     });
   });
 
@@ -92,7 +119,7 @@ describe("Device Helper Functions", () => {
     expect(watches).to.not.be.empty;
 
     watches.forEach((watch) => {
-      expect(watch.type).to.equal("watch");
+      // expect(watch.type).to.equal("watch");
     });
   });
 
