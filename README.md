@@ -1,6 +1,6 @@
 # Samsung Device Helper
 
-`samsung-device-helper` is an npm package designed to provide a comprehensive list of Samsung devices, including phones, tablets, and watches. It offers utility functions to retrieve device names by model and fetch lists of devices by category.
+`samsung-device-helper` is an npm package designed to provide a comprehensive list of Samsung devices, including phones, tablets, and watches. The package offers utility functions to retrieve device names by model and fetch lists of devices by category. **Note:** the list of phones includes models released after 2017, ensuring up-to-date information on the latest Samsung phones.
 
 ## Installation
 
