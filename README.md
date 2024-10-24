@@ -85,7 +85,7 @@ This project is licensed under the MIT License.
 
 ---
 
-For more information, visit the [GitHub repository](https://github.com/yourusername/samsung-device-helper).
+For more information, visit the [GitHub repository](https://github.com/kulcsarrudolf/samsung-device-helper).
 
 ## Acknowledgments
 
