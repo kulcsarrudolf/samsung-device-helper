@@ -23,6 +23,7 @@ describe("Device Helper Functions", () => {
     expect(phone).to.deep.equal({
       name: "Galaxy S21 5G",
       releaseDate: "01-29-2021",
+      type: "phone",
       models: [
         "SM-G991B",
         "SM-G991B/DS",
@@ -46,6 +47,7 @@ describe("Device Helper Functions", () => {
     expect(device).to.deep.equal({
       name: "Galaxy S21 5G",
       releaseDate: "01-29-2021",
+      type: "phone",
       models: [
         "SM-G991B",
         "SM-G991B/DS",
@@ -64,6 +66,7 @@ describe("Device Helper Functions", () => {
     const device = getDeviceByModel("SM-T970");
     expect(device).to.deep.equal({
       name: "Galaxy Tab S7+",
+      type: "tablet",
       releaseDate: "08-21-2020",
       models: ["SM-T970", "SM-T976B", "SM-T975"],
     });
@@ -74,6 +77,7 @@ describe("Device Helper Functions", () => {
     expect(device).to.deep.equal({
       name: "Galaxy Watch",
       releaseDate: null,
+      type: "watch",
       models: [
         "SM-805U",
         "SM-805W",
@@ -99,7 +103,7 @@ describe("Device Helper Functions", () => {
     expect(phones).to.not.be.empty;
 
     phones.forEach((phone) => {
-      // expect(phone.type).to.equal("phone");
+      expect(phone.type).to.equal("phone");
     });
   });
 
@@ -109,7 +113,7 @@ describe("Device Helper Functions", () => {
     expect(tablets).to.not.be.empty;
 
     tablets.forEach((tablet) => {
-      // expect(tablet.type).to.equal("tablet");
+      expect(tablet.type).to.equal("tablet");
     });
   });
 
@@ -119,7 +123,7 @@ describe("Device Helper Functions", () => {
     expect(watches).to.not.be.empty;
 
     watches.forEach((watch) => {
-      // expect(watch.type).to.equal("watch");
+      expect(watch.type).to.equal("watch");
     });
   });
 

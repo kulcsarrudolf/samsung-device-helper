@@ -1,6 +1,6 @@
 import { Device } from "../types";
 
-export const phones: Device[] = [
+export const samsungDevices: Device[] = [
   {
     name: "Galaxy Z Fold6",
     type: "phone",
