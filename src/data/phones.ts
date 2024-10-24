@@ -3,6 +3,7 @@ import { Device } from "../types";
 export const phones: Device[] = [
   {
     name: "Galaxy Z Fold6",
+    type: "phone",
     releaseDate: "07-24-2024",
     models: [
       "SM-F956B",
@@ -16,6 +17,7 @@ export const phones: Device[] = [
   },
   {
     name: "Galaxy Z Flip6",
+    type: "phone",
     releaseDate: "07-24-2024",
     models: [
       "SM-F741B",
@@ -28,38 +30,55 @@ export const phones: Device[] = [
   },
   {
     name: "Galaxy Watch Ultra",
+    type: "watch",
     releaseDate: "07-24-2024",
     models: ["SM-L705F", "SM-L705N", "SM-L705U"],
   },
   {
     name: "Galaxy Watch7",
+    type: "watch",
     releaseDate: "07-24-2024",
     models: ["SM-L310F", "SM-L315F"],
   },
-  { name: "Galaxy Watch FE", releaseDate: "06-24-2024", models: ["SM-R861"] },
+  {
+    name: "Galaxy Watch FE",
+    type: "watch",
+    releaseDate: "06-24-2024",
+    models: ["SM-R861"],
+  },
   {
     name: "Galaxy M35",
+    type: "phone",
     releaseDate: "05-24-2024",
     models: ["SM-M356B", "SM-M356B/DS"],
   },
   {
     name: "Galaxy F55",
+    type: "phone",
     releaseDate: "05-27-2024",
     models: ["SM-E556B/DS", "SM-E556B"],
   },
-  { name: "Galaxy C55", releaseDate: "04-22-2024", models: ["SM-C5560"] },
+  {
+    name: "Galaxy C55",
+    type: "phone",
+    releaseDate: "04-22-2024",
+    models: ["SM-C5560"],
+  },
   {
     name: "Galaxy M55",
+    type: "phone",
     releaseDate: "03-28-2024",
     models: ["SM-M556B", "SM-M556B/DS"],
   },
   {
     name: "Galaxy Tab S6 Lite (2024)",
+    type: "tablet",
     releaseDate: "03-28-2024",
     models: ["SM-P620", "SM-P625"],
   },
   {
     name: "Galaxy A55",
+    type: "phone",
     releaseDate: "03-15-2024",
     models: [
       "SM-A556V",
@@ -72,6 +91,7 @@ export const phones: Device[] = [
   },
   {
     name: "Galaxy A35",
+    type: "phone",
     releaseDate: "03-15-2024",
     models: [
       "SM-A356E",
@@ -84,21 +104,25 @@ export const phones: Device[] = [
   },
   {
     name: "Galaxy M15",
+    type: "phone",
     releaseDate: "04-05-2024",
     models: ["SM-M156B", "SM-M156B/DS", "SM-M156B/DSN"],
   },
   {
     name: "Galaxy M14 4G",
+    type: "phone",
     releaseDate: "03-07-2024",
     models: ["SM-M145F", "SM-M145F/DS"],
   },
   {
     name: "Galaxy F15",
+    type: "phone",
     releaseDate: "03-11-2024",
     models: ["SM-E156B", "SM-E156B/DS"],
   },
   {
     name: "Galaxy S24 Ultra",
+    type: "phone",
     releaseDate: "01-24-2024",
     models: [
       "SM-S928B",
@@ -114,6 +138,7 @@ export const phones: Device[] = [
   },
   {
     name: "Galaxy S24+",
+    type: "phone",
     releaseDate: "01-24-2024",
     models: [
       "SM-S926B",
@@ -129,6 +154,7 @@ export const phones: Device[] = [
   },
   {
     name: "Galaxy S24",
+    type: "phone",
     releaseDate: "01-24-2024",
     models: [
       "SM-S921B",
@@ -144,16 +170,19 @@ export const phones: Device[] = [
   },
   {
     name: "Galaxy XCover7",
+    type: "phone",
     releaseDate: "01-23-2024",
     models: ["SM-G556B", "SM-G556BU1", "SM-G556B/DS"],
   },
   {
     name: "Galaxy Tab Active5",
+    type: "tablet",
     releaseDate: "01-23-2024",
     models: ["SM-X306B"],
   },
   {
     name: "Galaxy A25",
+    type: "phone",
     releaseDate: "12-16-2023",
     models: [
       "SM-A256E",
@@ -168,6 +197,7 @@ export const phones: Device[] = [
   },
   {
     name: "Galaxy A15 5G",
+    type: "phone",
     releaseDate: "12-16-2023",
     models: [
       "SM-A156B",
@@ -188,6 +218,7 @@ export const phones: Device[] = [
   },
   {
     name: "Galaxy A15",
+    type: "phone",
     releaseDate: "12-16-2023",
     models: [
       "SM-A155F",
@@ -200,16 +231,19 @@ export const phones: Device[] = [
   },
   {
     name: "Galaxy Tab A9+",
+    type: "tablet",
     releaseDate: "10-17-2023",
     models: ["SM-X210", "SM-X215", "SM-X216B"],
   },
   {
     name: "Galaxy Tab A9",
+    type: "tablet",
     releaseDate: "10-05-2023",
     models: ["SM-X110", "SM-X115"],
   },
   {
     name: "Galaxy S23 FE",
+    type: "phone",
     releaseDate: "10-05-2023",
     models: [
       "SM-S711B",
@@ -222,16 +256,19 @@ export const phones: Device[] = [
   },
   {
     name: "Galaxy Tab S9 FE+",
+    type: "tablet",
     releaseDate: "10-16-2023",
     models: ["SM-X610", "SM-X616B"],
   },
   {
     name: "Galaxy Tab S9 FE",
+    type: "tablet",
     releaseDate: "10-16-2023",
     models: ["SM-X510", "SM-X516B"],
   },
   {
     name: "Galaxy A05s",
+    type: "phone",
     releaseDate: "10-18-2023",
     models: [
       "SM-A057F",
@@ -243,16 +280,19 @@ export const phones: Device[] = [
   },
   {
     name: "Galaxy A05",
+    type: "phone",
     releaseDate: "10-15-2023",
     models: ["SM-A055F", "SM-A055F/DS", "SM-A055M", "SM-A055M/DS"],
   },
   {
     name: "Galaxy F34",
+    type: "phone",
     releaseDate: "08-12-2023",
     models: ["SM-E346B", "SM-E346B/DS"],
   },
   {
     name: "Galaxy Z Fold5",
+    type: "phone",
     releaseDate: "08-11-2023",
     models: [
       "SM-F946B",
@@ -266,6 +306,7 @@ export const phones: Device[] = [
   },
   {
     name: "Galaxy Z Flip5",
+    type: "phone",
     releaseDate: "08-11-2023",
     models: [
       "SM-F731B",
@@ -278,33 +319,49 @@ export const phones: Device[] = [
   },
   {
     name: "Galaxy Tab S9 Ultra",
+    type: "tablet",
     releaseDate: "08-11-2023",
     models: ["SM-X910", "SM-X916B", "SM-X918U"],
   },
   {
     name: "Galaxy Tab S9+",
+    type: "tablet",
     releaseDate: "08-11-2023",
     models: ["SM-X810", "SM-X816B"],
   },
   {
     name: "Galaxy Tab S9",
+    type: "tablet",
     releaseDate: "08-11-2023",
     models: ["SM-X710", "SM-X716B"],
   },
-  { name: "Galaxy Watch6 Classic", releaseDate: "08-11-2023", models: [""] },
-  { name: "Galaxy Watch6", releaseDate: "08-11-2023", models: [""] },
+  {
+    name: "Galaxy Watch6 Classic",
+    type: "watch",
+    releaseDate: "08-11-2023",
+    models: [""],
+  },
+  {
+    name: "Galaxy Watch6",
+    type: "watch",
+    releaseDate: "08-11-2023",
+    models: [""],
+  },
   {
     name: "Galaxy M34 5G",
+    type: "phone",
     releaseDate: "07-15-2023",
     models: ["SM-M346B", "SM-M346B/DS"],
   },
   {
     name: "Galaxy F54",
+    type: "phone",
     releaseDate: "06-13-2023",
     models: ["SM-E546B", "SM-E546B/DS"],
   },
   {
     name: "Galaxy A24 4G",
+    type: "phone",
     releaseDate: "05-05-2023",
     models: [
       "SM-A245F",
@@ -317,16 +374,19 @@ export const phones: Device[] = [
   },
   {
     name: "Galaxy F14",
+    type: "phone",
     releaseDate: "03-30-2023",
     models: ["SM-E146B", "SM-E146B/DS"],
   },
   {
     name: "Galaxy M54",
+    type: "phone",
     releaseDate: "04-11-2023",
     models: ["SM-M546B", "SM-M546B/DS"],
   },
   {
     name: "Galaxy A54",
+    type: "phone",
     releaseDate: "03-24-2023",
     models: [
       "SM-A546V",
@@ -343,6 +403,7 @@ export const phones: Device[] = [
   },
   {
     name: "Galaxy A34",
+    type: "phone",
     releaseDate: "03-24-2023",
     models: [
       "SM-A346E",
@@ -359,11 +420,13 @@ export const phones: Device[] = [
   },
   {
     name: "Galaxy M14",
+    type: "phone",
     releaseDate: "03-08-2023",
     models: ["SM-M146B", "SM-M146B/DS", "SM-M146B/DSN"],
   },
   {
     name: "Galaxy S23 Ultra",
+    type: "phone",
     releaseDate: "02-17-2023",
     models: [
       "SM-S918B",
@@ -379,6 +442,7 @@ export const phones: Device[] = [
   },
   {
     name: "Galaxy S23+",
+    type: "phone",
     releaseDate: "02-17-2023",
     models: [
       "SM-S916B",
@@ -394,6 +458,7 @@ export const phones: Device[] = [
   },
   {
     name: "Galaxy S23",
+    type: "phone",
     releaseDate: "02-17-2023",
     models: [
       "SM-S911B",
@@ -409,6 +474,7 @@ export const phones: Device[] = [
   },
   {
     name: "Galaxy A14",
+    type: "phone",
     releaseDate: "03-27-2023",
     models: [
       "SM-A145F",
@@ -421,6 +487,7 @@ export const phones: Device[] = [
   },
   {
     name: "Galaxy A14 5G",
+    type: "phone",
     releaseDate: "01-12-2023",
     models: [
       "SM-A146B",
@@ -439,41 +506,49 @@ export const phones: Device[] = [
   },
   {
     name: "Galaxy F04",
+    type: "phone",
     releaseDate: "01-12-2023",
     models: ["SM-E045F", "SM-E045F/DS"],
   },
   {
     name: "Galaxy M04",
+    type: "phone",
     releaseDate: "12-16-2022",
     models: ["SM-M045F", "SM-M045F/DS"],
   },
   {
     name: "Galaxy Tab A7 10.4 (2022)",
+    type: "tablet",
     releaseDate: "11-21-2022",
     models: ["SM-T509"],
   },
   {
     name: "Galaxy A04e",
+    type: "phone",
     releaseDate: "11-07-2022",
     models: ["SM-A042F", "SM-A042F/DS", "SM-A042M", "SM-A042M/DS"],
   },
   {
     name: "Galaxy Tab Active4 Pro",
+    type: "tablet",
     releaseDate: "09-13-2022",
     models: ["SM-T636B"],
   },
   {
     name: "Galaxy A04s",
+    type: "phone",
     releaseDate: "09-22-2022",
     models: ["SM-A047F", "SM-A047F/DS", "SM-A047F/DSN", "SM-A047M"],
   },
   {
     name: "Galaxy A04",
+    type: "phone",
     releaseDate: "10-10-2022",
     models: ["SM-A045F", "SM-A045F/DS", "SM-A045M"],
   },
   {
     name: "Galaxy Z Fold4",
+    type: "phone",
     releaseDate: "08-25-2022",
     models: [
       "SM-F936B",
@@ -487,6 +562,7 @@ export const phones: Device[] = [
   },
   {
     name: "Galaxy Z Flip4",
+    type: "phone",
     releaseDate: "08-25-2022",
     models: [
       "SM-F721B",
@@ -500,16 +576,19 @@ export const phones: Device[] = [
   },
   {
     name: "Galaxy Watch5 Pro",
+    type: "watch",
     releaseDate: "08-26-2022",
     models: ["SM-R925F"],
   },
   {
     name: "Galaxy Watch5",
+    type: "watch",
     releaseDate: "08-26-2022",
     models: ["SM-R915F", "SM-R905F"],
   },
   {
     name: "Galaxy A23 5G",
+    type: "phone",
     releaseDate: "09-02-2022",
     models: [
       "SM-A236U",
@@ -522,56 +601,67 @@ export const phones: Device[] = [
   },
   {
     name: "Galaxy M13 5G",
+    type: "phone",
     releaseDate: "07-23-2022",
     models: ["SM-M136B", "SM-M136B/DS"],
   },
   {
     name: "Galaxy M13 (India)",
+    type: "phone",
     releaseDate: "07-23-2022",
     models: ["SM-M135FU", "SM-M135FU/DS"],
   },
   {
     name: "Galaxy A13 (SM-A137)",
+    type: "phone",
     releaseDate: null,
     models: ["SM-A137F", "SM-A137F/DSN", "SM-A137F/DS"],
   },
   {
     name: "Galaxy XCover6 Pro",
+    type: "phone",
     releaseDate: "07-13-2022",
     models: ["SM-G736U", "SM-G736U1", "SM-G736B", "SM-G736B/DS"],
   },
   {
     name: "Galaxy F13",
+    type: "phone",
     releaseDate: "06-29-2022",
     models: ["SM-E135F", "SM-E135F/DS"],
   },
   {
     name: "Galaxy M13",
+    type: "phone",
     releaseDate: "07-01-2022",
     models: ["SM-M135F", "SM-M135F/DSN"],
   },
   {
     name: "Galaxy Tab S6 Lite (2022)",
+    type: "tablet",
     releaseDate: "05-23-2022",
     models: ["SM-P613", "SM-P619"],
   },
   {
     name: "Galaxy M53",
+    type: "phone",
     releaseDate: "04-22-2022",
     models: ["SM-M536B", "SM-M536B/DS", "SM-M536B/DSN"],
   },
   {
     name: "Galaxy S20 FE 2022",
+    type: "phone",
     releaseDate: "04-01-2022",
     models: ["SM-G781NK", "SM-G781NK22"],
   },
   {
     name: "Galaxy A73 5G",
+    type: "phone",
     releaseDate: "04-22-2022",
     models: ["SM-A736B", "SM-A736B/DS"],
   },
   {
     name: "Galaxy A53 5G",
+    type: "phone",
     releaseDate: "03-24-2022",
     models: [
       "SM-A536B",
@@ -589,6 +679,7 @@ export const phones: Device[] = [
   },
   {
     name: "Galaxy A33 5G",
+    type: "phone",
     releaseDate: "04-20-2022",
     models: [
       "SM-A336E",
@@ -602,11 +693,13 @@ export const phones: Device[] = [
   },
   {
     name: "Galaxy F23",
+    type: "phone",
     releaseDate: "03-16-2022",
     models: ["SM-E236B", "SM-E236B/DS"],
   },
   {
     name: "Galaxy M33",
+    type: "phone",
     releaseDate: "04-08-2022",
     models: [
       "SM-M336B",
@@ -618,11 +711,13 @@ export const phones: Device[] = [
   },
   {
     name: "Galaxy M23",
+    type: "phone",
     releaseDate: "04-08-2022",
     models: ["SM-M236B", "SM-M236B/DS", "SM-M236L"],
   },
   {
     name: "Galaxy A23",
+    type: "phone",
     releaseDate: "03-25-2022",
     models: [
       "SM-A235F",
@@ -635,6 +730,7 @@ export const phones: Device[] = [
   },
   {
     name: "Galaxy A13",
+    type: "phone",
     releaseDate: "03-23-2022",
     models: [
       "SM-A135F",
@@ -647,6 +743,7 @@ export const phones: Device[] = [
   },
   {
     name: "Galaxy S22 Ultra 5G",
+    type: "phone",
     releaseDate: "02-25-2022",
     models: [
       "SM-S908B",
@@ -662,6 +759,7 @@ export const phones: Device[] = [
   },
   {
     name: "Galaxy S22+ 5G",
+    type: "phone",
     releaseDate: "02-25-2022",
     models: [
       "SM-S906B",
@@ -677,6 +775,7 @@ export const phones: Device[] = [
   },
   {
     name: "Galaxy S22 5G",
+    type: "phone",
     releaseDate: "02-25-2022",
     models: [
       "SM-S901B",
@@ -692,21 +791,25 @@ export const phones: Device[] = [
   },
   {
     name: "Galaxy Tab S8 Ultra",
+    type: "tablet",
     releaseDate: "04-30-2022",
     models: ["SM-X900", "SM-X906", "SM-X906B", "SM-X906U", "SM-X906N"],
   },
   {
     name: "Galaxy Tab S8+",
+    type: "tablet",
     releaseDate: "04-14-2022",
     models: ["SM-X800", "SM-X806", "SM-X806B", "SM-X806U", "SM-X806N"],
   },
   {
     name: "Galaxy Tab S8",
+    type: "tablet",
     releaseDate: "03-22-2022",
     models: ["SM-X700", "SM-X706", "SM-X706B", "SM-X706U", "SM-X706N"],
   },
   {
     name: "Galaxy S21 FE 5G",
+    type: "phone",
     releaseDate: "01-07-2022",
     models: [
       "SM-G990B",
@@ -724,46 +827,55 @@ export const phones: Device[] = [
   },
   {
     name: "Galaxy Tab A8 10.5 (2021)",
+    type: "tablet",
     releaseDate: "01-17-2022",
     models: ["SM-X200", "SM-X205"],
   },
   {
     name: "Galaxy A13 5G",
+    type: "phone",
     releaseDate: "12-03-2021",
     models: ["SM-A136U", "SM-A136U1", "SM-A136W", "SM-A136B", "SM-S136DL"],
   },
   {
     name: "Galaxy A03",
+    type: "phone",
     releaseDate: "01-21-2022",
     models: ["SM-A035F", "SM-A035F/DS", "SM-A035M", "SM-A035G"],
   },
   {
     name: "Galaxy A03 Core",
+    type: "phone",
     releaseDate: "12-06-2021",
     models: ["SM-A032F", "SM-A032F/DS", "SM-A032M"],
   },
   {
     name: "Galaxy F42 5G",
+    type: "phone",
     releaseDate: "10-03-2021",
     models: ["SM-E426B", "SM-E426B/DS"],
   },
   {
     name: "Galaxy M52 5G",
+    type: "phone",
     releaseDate: "10-03-2021",
     models: ["SM-M526BR", "SM-M526BR/DS", "SM-M526B", "SM-M526B/DS"],
   },
   {
     name: "Galaxy M22",
+    type: "phone",
     releaseDate: "10-13-2021",
     models: ["SM-M225FV", "SM-M225FV/DS"],
   },
   {
     name: "Galaxy M32 5G",
+    type: "phone",
     releaseDate: "09-02-2021",
     models: ["SM-M326B", "SM-M326B/DS"],
   },
   {
     name: "Galaxy A03s",
+    type: "phone",
     releaseDate: "08-18-2021",
     models: [
       "SM-A037F",
@@ -778,11 +890,13 @@ export const phones: Device[] = [
   },
   {
     name: "Galaxy A52s 5G",
+    type: "phone",
     releaseDate: "09-01-2021",
     models: ["SM-A528B", "SM-A528B/DS", "SM-A528N"],
   },
   {
     name: "Galaxy Z Fold3 5G",
+    type: "phone",
     releaseDate: "08-27-2021",
     models: [
       "SM-F926B",
@@ -796,6 +910,7 @@ export const phones: Device[] = [
   },
   {
     name: "Galaxy Z Flip3 5G",
+    type: "phone",
     releaseDate: "08-27-2021",
     models: [
       "SM-F711B",
@@ -808,41 +923,49 @@ export const phones: Device[] = [
   },
   {
     name: "Galaxy Watch4 Classic",
+    type: "watch",
     releaseDate: "08-27-2021",
     models: ["SM-R880", "SM-R890"],
   },
   {
     name: "Galaxy Watch4",
+    type: "watch",
     releaseDate: "08-27-2021",
     models: ["SM-R860", "SM-R870"],
   },
   {
     name: "Galaxy A12 (India)",
+    type: "phone",
     releaseDate: "08-12-2021",
     models: ["SM-A127F", "SM-A127F/DS"],
   },
   {
     name: "Galaxy A12 Nacho",
+    type: "phone",
     releaseDate: "08-09-2021",
     models: ["SM-A127F/DSN", "SM-A127F/DS", "SM-A127F", "SM-A127M", "SM-A127U"],
   },
   {
     name: "Galaxy M21 2021",
+    type: "phone",
     releaseDate: "07-26-2021",
     models: ["SM-M215G", "SM-M215G/DS"],
   },
   {
     name: "Galaxy F22",
+    type: "phone",
     releaseDate: "07-13-2021",
     models: ["SM-E225F", "SM-E225F/DS"],
   },
   {
     name: "Galaxy M32",
+    type: "phone",
     releaseDate: "06-28-2021",
     models: ["SM-M325FV", "SM-M325FV/DS", "SM-M325F/DS", "SM-M325F"],
   },
   {
     name: "Galaxy A22 5G",
+    type: "phone",
     releaseDate: "06-24-2021",
     models: [
       "SM-A226B",
@@ -856,44 +979,67 @@ export const phones: Device[] = [
   },
   {
     name: "Galaxy A22",
+    type: "phone",
     releaseDate: "07-01-2021",
     models: ["SM-A225F", "SM-A225F/DS", "SM-A225M", "SM-A225M/DS"],
   },
   {
     name: "Galaxy Tab A7 Lite",
+    type: "tablet",
     releaseDate: "06-18-2021",
     models: ["SM-T225", "SM-T220", "SM-T225N", "SM-T227U"],
   },
   {
     name: "Galaxy Tab S7 FE",
+    type: "tablet",
     releaseDate: "06-18-2021",
     models: ["SM-T730", "SM-T733", "SM-T736B", "SM-T735"],
   },
-  { name: "Galaxy F52 5G", releaseDate: "06-01-2021", models: ["SM-E5260"] },
+  {
+    name: "Galaxy F52 5G",
+    type: "phone",
+    releaseDate: "06-01-2021",
+    models: ["SM-E5260"],
+  },
   {
     name: "Galaxy M42 5G",
+    type: "phone",
     releaseDate: "05-01-2021",
     models: ["SM-M426B", "SM-M426B/DS"],
   },
-  { name: "Galaxy M12", releaseDate: "04-30-2021", models: ["SM-M127F/DSN"] },
-  { name: "Galaxy Quantum 2", releaseDate: "04-23-2021", models: ["SM-A826S"] },
+  {
+    name: "Galaxy M12",
+    type: "phone",
+    releaseDate: "04-30-2021",
+    models: ["SM-M127F/DSN"],
+  },
+  {
+    name: "Galaxy Quantum 2",
+    type: "phone",
+    releaseDate: "04-23-2021",
+    models: ["SM-A826S"],
+  },
   {
     name: "Galaxy F12",
+    type: "phone",
     releaseDate: "04-12-2021",
     models: ["SM-F127G", "SM-F127G/DS", "SM-F127F", "SM-F127F/DS"],
   },
   {
     name: "Galaxy F02s",
+    type: "phone",
     releaseDate: "04-09-2021",
     models: ["SM-E025F", "SM-E025F/DS"],
   },
   {
     name: "Galaxy A72",
+    type: "phone",
     releaseDate: "03-26-2021",
     models: ["SM-A725F", "SM-A725F/DS", "SM-A725M", "SM-A725M/DS"],
   },
   {
     name: "Galaxy A52 5G",
+    type: "phone",
     releaseDate: "03-19-2021",
     models: [
       "SM-A526B",
@@ -906,31 +1052,37 @@ export const phones: Device[] = [
   },
   {
     name: "Galaxy A52",
+    type: "phone",
     releaseDate: "03-26-2021",
     models: ["SM-A525F", "SM-A525F/DS", "SM-A525M", "SM-A525M/DS"],
   },
   {
     name: "Galaxy XCover 5",
+    type: "phone",
     releaseDate: "03-12-2021",
     models: ["SM-G525F", "SM-G525F/DS", "SM-G525N"],
   },
   {
     name: "Galaxy A32",
+    type: "phone",
     releaseDate: "02-25-2021",
     models: ["SM-A325F", "SM-A325F/DS", "SM-A325M", "SM-A325N"],
   },
   {
     name: "Galaxy M62",
+    type: "phone",
     releaseDate: "03-03-2021",
     models: ["SM-M625F", "SM-M625F/DS"],
   },
   {
     name: "Galaxy F62",
+    type: "phone",
     releaseDate: "02-22-2021",
     models: ["SM-E625F", "SM-E625F/DS"],
   },
   {
     name: "Galaxy M12 (India)",
+    type: "phone",
     releaseDate: "03-18-2021",
     models: [
       "SM-M127F",
@@ -943,6 +1095,7 @@ export const phones: Device[] = [
   },
   {
     name: "Galaxy S21 Ultra 5G",
+    type: "phone",
     releaseDate: "01-29-2021",
     models: [
       "SM-G998B",
@@ -956,6 +1109,7 @@ export const phones: Device[] = [
   },
   {
     name: "Galaxy S21+ 5G",
+    type: "phone",
     releaseDate: "01-29-2021",
     models: [
       "SM-G996B",
@@ -969,6 +1123,7 @@ export const phones: Device[] = [
   },
   {
     name: "Galaxy S21 5G",
+    type: "phone",
     releaseDate: "01-29-2021",
     models: [
       "SM-G991B",
@@ -984,6 +1139,7 @@ export const phones: Device[] = [
   },
   {
     name: "Galaxy A32 5G",
+    type: "phone",
     releaseDate: "01-22-2021",
     models: [
       "SM-A326B",
@@ -1000,11 +1156,13 @@ export const phones: Device[] = [
   },
   {
     name: "Galaxy M02s",
+    type: "phone",
     releaseDate: "01-19-2021",
     models: ["SM-M025F/DS", "SM-M025F"],
   },
   {
     name: "Galaxy A12",
+    type: "phone",
     releaseDate: "12-21-2020",
     models: [
       "SM-A125F/DSN",
@@ -1019,11 +1177,13 @@ export const phones: Device[] = [
   },
   {
     name: "Galaxy M02",
+    type: "phone",
     releaseDate: "02-09-2021",
     models: ["SM-M022F", "SM-M022F/DS", "SM-M022G", "SM-M022G/DS"],
   },
   {
     name: "Galaxy A02",
+    type: "phone",
     releaseDate: "01-27-2021",
     models: [
       "SM-A022F",
@@ -1036,6 +1196,7 @@ export const phones: Device[] = [
   },
   {
     name: "Galaxy A02s",
+    type: "phone",
     releaseDate: "01-04-2021",
     models: [
       "SM-A025F",
@@ -1054,26 +1215,31 @@ export const phones: Device[] = [
   },
   {
     name: "Galaxy M21s",
+    type: "phone",
     releaseDate: "11-06-2020",
     models: ["SM-F415F", "SM-F415F/DS"],
   },
   {
     name: "Galaxy M31 Prime",
+    type: "phone",
     releaseDate: "10-17-2020",
     models: ["SM-M315F/DS"],
   },
   {
     name: "Galaxy F41",
+    type: "phone",
     releaseDate: "10-16-2020",
     models: ["SM-F415F/DS", "SM-F415F"],
   },
   {
     name: "Galaxy Tab Active3",
+    type: "tablet",
     releaseDate: "09-28-2020",
     models: ["SM-T575"],
   },
   {
     name: "Galaxy S20 FE 5G",
+    type: "phone",
     releaseDate: "10-02-2020",
     models: [
       "SM-G781B",
@@ -1088,11 +1254,13 @@ export const phones: Device[] = [
   },
   {
     name: "Galaxy S20 FE",
+    type: "phone",
     releaseDate: "10-02-2020",
     models: ["SM-G780F", "SM-G780F/DSM", "SM-G780G"],
   },
   {
     name: "Galaxy A42 5G",
+    type: "phone",
     releaseDate: "11-11-2020",
     models: [
       "SM-A426B",
@@ -1105,17 +1273,25 @@ export const phones: Device[] = [
   },
   {
     name: "Galaxy Tab A7 10.4 (2020)",
+    type: "tablet",
     releaseDate: "09-11-2020",
     models: ["SM-T500", "SM-T505", "SM-T505N"],
   },
   {
     name: "Galaxy M51",
+    type: "phone",
     releaseDate: "09-11-2020",
     models: ["SM-M515F", "SM-M515F/DSN"],
   },
-  { name: "Galaxy A51 5G UW", releaseDate: "08-14-2020", models: ["SM-A516V"] },
+  {
+    name: "Galaxy A51 5G UW",
+    type: "phone",
+    releaseDate: "08-14-2020",
+    models: ["SM-A516V"],
+  },
   {
     name: "Galaxy Z Fold2 5G",
+    type: "phone",
     releaseDate: "09-18-2020",
     models: [
       "SM-F916B",
@@ -1129,6 +1305,7 @@ export const phones: Device[] = [
   },
   {
     name: "Galaxy Note20 Ultra 5G",
+    type: "phone",
     releaseDate: "08-21-2020",
     models: [
       "SM-N986B",
@@ -1143,11 +1320,13 @@ export const phones: Device[] = [
   },
   {
     name: "Galaxy Note20 Ultra",
+    type: "phone",
     releaseDate: "08-21-2020",
     models: ["SM-N985F", "SM-N985F/DS"],
   },
   {
     name: "Galaxy Note20 5G",
+    type: "phone",
     releaseDate: "08-21-2020",
     models: [
       "SM-N981B",
@@ -1161,11 +1340,13 @@ export const phones: Device[] = [
   },
   {
     name: "Galaxy Note20",
+    type: "phone",
     releaseDate: "08-21-2020",
     models: ["SM-N980F", "SM-N980F/DS"],
   },
   {
     name: "Galaxy Watch3",
+    type: "watch",
     releaseDate: "08-06-2020",
     models: [
       "SM-R850",
@@ -1178,16 +1359,19 @@ export const phones: Device[] = [
   },
   {
     name: "Galaxy Tab S7+",
+    type: "tablet",
     releaseDate: "08-21-2020",
     models: ["SM-T970", "SM-T976B", "SM-T975"],
   },
   {
     name: "Galaxy Tab S7",
+    type: "tablet",
     releaseDate: "08-21-2020",
     models: ["SM-T870", "SM-T875", "SM-T876B"],
   },
   {
     name: "Galaxy Z Flip 5G",
+    type: "phone",
     releaseDate: "08-07-2020",
     models: [
       "SM-F707B",
@@ -1200,32 +1384,43 @@ export const phones: Device[] = [
   },
   {
     name: "Galaxy M31s",
+    type: "phone",
     releaseDate: "08-06-2020",
     models: ["SM-M317F", "SM-M317F/DS"],
   },
   {
     name: "Galaxy M01s",
+    type: "phone",
     releaseDate: "07-16-2020",
     models: ["SM-M017F", "SM-M017F/DS"],
   },
   {
     name: "Galaxy M01 Core",
+    type: "phone",
     releaseDate: "07-29-2020",
     models: ["SM-M013F", "SM-M013F/DS"],
   },
   {
     name: "Galaxy A01 Core",
+    type: "phone",
     releaseDate: "08-06-2020",
     models: ["SM-A013F", "SM-A013F/DS", "SM-A013G", "SM-A013G/DS", "SM-A013M"],
   },
-  { name: "Galaxy A71 5G UW", releaseDate: "07-16-2020", models: ["SM-A716V"] },
+  {
+    name: "Galaxy A71 5G UW",
+    type: "phone",
+    releaseDate: "07-16-2020",
+    models: ["SM-A716V"],
+  },
   {
     name: "Galaxy M01",
+    type: "phone",
     releaseDate: "06-02-2020",
     models: ["SM-M015G", "SM-M015F", "SM-M015G/DS", "SM-M015F/DS"],
   },
   {
     name: "Galaxy A21s",
+    type: "phone",
     releaseDate: "06-02-2020",
     models: [
       "SM-A217F",
@@ -1238,16 +1433,19 @@ export const phones: Device[] = [
   },
   {
     name: "Galaxy J2 Core (2020)",
+    type: "phone",
     releaseDate: "04-27-2020",
     models: ["SM-J260GU", "SM-J260GU/DS", "SM-J260FU", "SM-J260MU"],
   },
   {
     name: "Galaxy A Quantum",
+    type: "phone",
     releaseDate: "05-22-2020",
     models: ["SM-A716N", "SM-A716SS", "SM-A716S"],
   },
   {
     name: "Galaxy A71 5G",
+    type: "phone",
     releaseDate: "06-15-2020",
     models: [
       "SM-A716F",
@@ -1262,6 +1460,7 @@ export const phones: Device[] = [
   },
   {
     name: "Galaxy A51 5G",
+    type: "phone",
     releaseDate: "04-29-2020",
     models: [
       "SM-A516F",
@@ -1278,31 +1477,37 @@ export const phones: Device[] = [
   },
   {
     name: "Galaxy A21",
+    type: "phone",
     releaseDate: "06-26-2020",
     models: ["SM-A215U", "SM-A215U1", "SM-S215DL", "SM-A215W"],
   },
   {
     name: "Galaxy Tab A 8.4 (2020)",
+    type: "tablet",
     releaseDate: "03-25-2020",
     models: ["SM-T307U"],
   },
   {
     name: "Galaxy Tab S6 Lite (2020)",
+    type: "tablet",
     releaseDate: "05-16-2020",
     models: ["SM-P610N", "SM-P615", "SM-P610"],
   },
   {
     name: "Galaxy M11",
+    type: "phone",
     releaseDate: "05-04-2020",
     models: ["SM-M115F", "SM-M115F/DSN", "SM-M115M", "SM-M115M/DS"],
   },
   {
     name: "Galaxy A31",
+    type: "phone",
     releaseDate: "04-27-2020",
     models: ["SM-A315F", "SM-A315F/DS", "SM-A315G/DS", "SM-A315G", "SM-A315N"],
   },
   {
     name: "Galaxy A41",
+    type: "phone",
     releaseDate: "05-22-2020",
     models: [
       "SM-A415F/DSN",
@@ -1315,11 +1520,13 @@ export const phones: Device[] = [
   },
   {
     name: "Galaxy M21",
+    type: "phone",
     releaseDate: "03-23-2020",
     models: ["SM-M215F", "SM-M215F/DS", "SM-M215F/DSN"],
   },
   {
     name: "Galaxy A11",
+    type: "phone",
     releaseDate: "05-01-2020",
     models: [
       "SM-A115F/DS",
@@ -1337,11 +1544,13 @@ export const phones: Device[] = [
   },
   {
     name: "Galaxy M31",
+    type: "phone",
     releaseDate: "03-05-2020",
     models: ["SM-M315F", "SM-M315F/DS", "SM-M315F/DSN"],
   },
   {
     name: "Galaxy S20 Ultra 5G",
+    type: "phone",
     releaseDate: "03-06-2020",
     models: [
       "SM-G988",
@@ -1357,11 +1566,13 @@ export const phones: Device[] = [
   },
   {
     name: "Galaxy S20 Ultra",
+    type: "phone",
     releaseDate: "03-15-2020",
     models: ["SM-G988B/DS"],
   },
   {
     name: "Galaxy S20+ 5G",
+    type: "phone",
     releaseDate: "03-06-2020",
     models: [
       "SM-G986",
@@ -1379,12 +1590,19 @@ export const phones: Device[] = [
   },
   {
     name: "Galaxy S20+",
+    type: "phone",
     releaseDate: "03-06-2020",
     models: ["SM-G985", "SM-G985F", "SM-G985F/DS"],
   },
-  { name: "Galaxy S20 5G UW", releaseDate: "06-04-2020", models: ["SM-G981V"] },
+  {
+    name: "Galaxy S20 5G UW",
+    type: "phone",
+    releaseDate: "06-04-2020",
+    models: ["SM-G981V"],
+  },
   {
     name: "Galaxy S20 5G",
+    type: "phone",
     releaseDate: "03-06-2020",
     models: [
       "SM-G981",
@@ -1403,11 +1621,13 @@ export const phones: Device[] = [
   },
   {
     name: "Galaxy S20",
+    type: "phone",
     releaseDate: "03-06-2020",
     models: ["SM-G980", "SM-G980F", "SM-G980F/DS"],
   },
   {
     name: "Galaxy Z Flip",
+    type: "phone",
     releaseDate: "02-14-2020",
     models: [
       "SM-F700",
@@ -1421,9 +1641,15 @@ export const phones: Device[] = [
       "SM-F700U1",
     ],
   },
-  { name: "Galaxy Tab S6 5G", releaseDate: "01-30-2020", models: ["SM-T866N"] },
+  {
+    name: "Galaxy Tab S6 5G",
+    type: "tablet",
+    releaseDate: "01-30-2020",
+    models: ["SM-T866N"],
+  },
   {
     name: "Galaxy XCover Pro",
+    type: "phone",
     releaseDate: null,
     models: [
       "SM-G715FN/DS",
@@ -1436,16 +1662,19 @@ export const phones: Device[] = [
   },
   {
     name: "Galaxy Note10 Lite",
+    type: "phone",
     releaseDate: "01-21-2020",
     models: ["SM-N770F", "SM-N770F/DS", "SM-N770F/DSM"],
   },
   {
     name: "Galaxy S10 Lite",
+    type: "phone",
     releaseDate: "02-03-2020",
     models: ["SM-G770F", "SM-G770F/DS", "SM-G770F/DSM", "SM-G770U1"],
   },
   {
     name: "Galaxy A01",
+    type: "phone",
     releaseDate: null,
     models: [
       "SM-A015F",
@@ -1465,6 +1694,7 @@ export const phones: Device[] = [
   },
   {
     name: "Galaxy A71",
+    type: "phone",
     releaseDate: "01-17-2020",
     models: [
       "SM-A715F",
@@ -1477,6 +1707,7 @@ export const phones: Device[] = [
   },
   {
     name: "Galaxy A51",
+    type: "phone",
     releaseDate: "12-16-2019",
     models: [
       "SM-A515F",
@@ -1494,11 +1725,13 @@ export const phones: Device[] = [
   },
   {
     name: "Galaxy XCover FieldPro",
+    type: "phone",
     releaseDate: "04-06-2020",
     models: ["SM-G889F", "SM-G889A"],
   },
   {
     name: "Galaxy A70s",
+    type: "phone",
     releaseDate: null,
     models: [
       "SM-A707F",
@@ -1511,11 +1744,13 @@ export const phones: Device[] = [
   },
   {
     name: "Galaxy A20s",
+    type: "phone",
     releaseDate: "10-05-2019",
     models: ["SM-A207F", "SM-A207M", "SM-A2070"],
   },
   {
     name: "Galaxy M30s",
+    type: "phone",
     releaseDate: "10-30-2019",
     models: [
       "SM-M307F",
@@ -1527,11 +1762,13 @@ export const phones: Device[] = [
   },
   {
     name: "Galaxy M10s",
+    type: "phone",
     releaseDate: null,
     models: ["SM-M107F", "SM-M107G", "SM-M107Y", "SM-M107M"],
   },
   {
     name: "Galaxy Fold 5G",
+    type: "phone",
     releaseDate: null,
     models: [
       "SM-F907F",
@@ -1544,6 +1781,7 @@ export const phones: Device[] = [
   },
   {
     name: "Galaxy Fold",
+    type: "phone",
     releaseDate: null,
     models: [
       "SM-F900F",
@@ -1556,26 +1794,31 @@ export const phones: Device[] = [
   },
   {
     name: "Galaxy Tab Active Pro",
+    type: "tablet",
     releaseDate: null,
     models: ["SM-T540", "SM-T547"],
   },
   {
     name: "Galaxy A90 5G",
+    type: "phone",
     releaseDate: null,
     models: ["SM-A908B", "SM-A908N", "SM-A9080"],
   },
   {
     name: "Galaxy A30s",
+    type: "phone",
     releaseDate: "09-11-2019",
     models: ["SM-A307F", "SM-A307FN", "SM-A307G", "SM-A307GN", "SM-A307GT"],
   },
   {
     name: "Galaxy A50s",
+    type: "phone",
     releaseDate: null,
     models: ["SM-A507F", "SM-A507FN", "SM-A5070"],
   },
   {
     name: "Galaxy Note10+ 5G",
+    type: "phone",
     releaseDate: null,
     models: [
       "SM-N976F",
@@ -1590,6 +1833,7 @@ export const phones: Device[] = [
   },
   {
     name: "Galaxy Note10+",
+    type: "phone",
     releaseDate: "08-23-2019",
     models: [
       "SM-N975F",
@@ -1604,11 +1848,13 @@ export const phones: Device[] = [
   },
   {
     name: "Galaxy Note10 5G",
+    type: "phone",
     releaseDate: null,
     models: ["SM-N971U", "SM-N971N"],
   },
   {
     name: "Galaxy Note10",
+    type: "phone",
     releaseDate: "08-23-2019",
     models: [
       "SM-N970F",
@@ -1623,44 +1869,67 @@ export const phones: Device[] = [
   },
   {
     name: "Galaxy Watch Active2",
+    type: "watch",
     releaseDate: null,
     models: ["SM-R825F", "SM-R835F", "SM-R825U", "SM-R835U"],
   },
   {
     name: "Galaxy Watch Active2 Aluminum",
+    type: "watch",
     releaseDate: null,
     models: ["SM-R830"],
   },
   {
     name: "Galaxy A10s",
+    type: "phone",
     releaseDate: "08-27-2019",
     models: ["SM-A107F", "SM-A107M"],
   },
   {
     name: "Galaxy A10e",
+    type: "phone",
     releaseDate: null,
     models: ["SM-A102U", "SM-S102DL", "SM-A102U1", "SM-A102W", "SM-A102N"],
   },
-  { name: "Galaxy Tab S6", releaseDate: null, models: ["SM-T860", "SM-T865"] },
+  {
+    name: "Galaxy Tab S6",
+    type: "tablet",
+    releaseDate: null,
+    models: ["SM-T860", "SM-T865"],
+  },
   {
     name: "Galaxy Tab A 8.0 (2019)",
+    type: "tablet",
     releaseDate: null,
     models: ["SM-T290", "SM-T295"],
   },
   {
     name: "Galaxy XCover 4s",
+    type: "phone",
     releaseDate: null,
     models: ["SM-G398F", "SM-G398FN/DS", "SM-G398FN"],
   },
   {
     name: "Galaxy A2 Core",
+    type: "phone",
     releaseDate: null,
     models: ["SM-A260F", "SM-A260G"],
   },
-  { name: "Galaxy Watch Active", releaseDate: null, models: ["SM-R500"] },
-  { name: "Galaxy View2", releaseDate: null, models: ["SM-T927A", "SM-T920"] },
+  {
+    name: "Galaxy Watch Active",
+    type: "watch",
+    releaseDate: null,
+    models: ["SM-R500"],
+  },
+  {
+    name: "Galaxy View2",
+    type: "phone",
+    releaseDate: null,
+    models: ["SM-T927A", "SM-T920"],
+  },
   {
     name: "Galaxy S10 5G",
+    type: "phone",
     releaseDate: null,
     models: [
       "SM-G977U",
@@ -1673,6 +1942,7 @@ export const phones: Device[] = [
   },
   {
     name: "Galaxy S10+",
+    type: "phone",
     releaseDate: "03-08-2019",
     models: [
       "SM-G975F",
@@ -1687,6 +1957,7 @@ export const phones: Device[] = [
   },
   {
     name: "Galaxy S10",
+    type: "phone",
     releaseDate: "03-08-2019",
     models: [
       "SM-G973F",
@@ -1702,6 +1973,7 @@ export const phones: Device[] = [
   },
   {
     name: "Galaxy S10e",
+    type: "phone",
     releaseDate: "03-08-2019",
     models: [
       "SM-G970F",
@@ -1715,11 +1987,13 @@ export const phones: Device[] = [
   },
   {
     name: "Galaxy M40",
+    type: "phone",
     releaseDate: null,
     models: ["SM-M405F", "SM-M405FN", "SM-M405G"],
   },
   {
     name: "Galaxy M30",
+    type: "phone",
     releaseDate: null,
     models: [
       "SM-M305F",
@@ -1733,21 +2007,25 @@ export const phones: Device[] = [
   },
   {
     name: "Galaxy M20",
+    type: "phone",
     releaseDate: null,
     models: ["SM-M205F", "SM-M205FN", "SM-M205G", "SM-M205M", "SM-M205N"],
   },
   {
     name: "Galaxy M10",
+    type: "phone",
     releaseDate: null,
     models: ["SM-M105F", "SM-M105G", "SM-M105Y", "SM-M105M"],
   },
   {
     name: "Galaxy A80",
+    type: "phone",
     releaseDate: null,
     models: ["SM-A805F", "SM-A8050", "SM-A805X", "SM-A805N"],
   },
   {
     name: "Galaxy A70",
+    type: "phone",
     releaseDate: "05-01-2019",
     models: [
       "SM-A705F",
@@ -1763,11 +2041,13 @@ export const phones: Device[] = [
   },
   {
     name: "Galaxy A60",
+    type: "phone",
     releaseDate: null,
     models: ["SM-A606F", "SM-A6060", "SM-A606Y"],
   },
   {
     name: "Galaxy A50",
+    type: "phone",
     releaseDate: "03-18-2019",
     models: [
       "SM-A505F",
@@ -1788,11 +2068,13 @@ export const phones: Device[] = [
   },
   {
     name: "Galaxy A40",
+    type: "phone",
     releaseDate: null,
     models: ["SM-A405F", "SM-A405FN", "SM-A405FM", "SM-A405S"],
   },
   {
     name: "Galaxy A30",
+    type: "phone",
     releaseDate: null,
     models: [
       "SM-A305F",
@@ -1805,9 +2087,15 @@ export const phones: Device[] = [
       "SM-A305GT",
     ],
   },
-  { name: "Galaxy A20e", releaseDate: null, models: ["SM-A202F", "SM-A202K"] },
+  {
+    name: "Galaxy A20e",
+    type: "phone",
+    releaseDate: null,
+    models: ["SM-A202F", "SM-A202K"],
+  },
   {
     name: "Galaxy A20",
+    type: "phone",
     releaseDate: "04-05-2019",
     models: [
       "SM-A205F",
@@ -1824,49 +2112,73 @@ export const phones: Device[] = [
   },
   {
     name: "Galaxy A10",
+    type: "phone",
     releaseDate: "03-19-2019",
     models: ["SM-A105F", "SM-A105G", "SM-A105M", "SM-A105FN"],
   },
-  { name: "Galaxy Tab S5e", releaseDate: null, models: ["SM-T725", "SM-T720"] },
+  {
+    name: "Galaxy Tab S5e",
+    type: "tablet",
+    releaseDate: null,
+    models: ["SM-T725", "SM-T720"],
+  },
   {
     name: "Galaxy Tab A 10.1 (2019)",
+    type: "tablet",
     releaseDate: null,
     models: ["SM-T515", "SM-T510"],
   },
   {
     name: "Galaxy Tab A 8.0 & S Pen (2019)",
+    type: "tablet",
     releaseDate: null,
     models: ["SM-P205", "SM-P200"],
   },
-  { name: "Galaxy Tab Advanced2", releaseDate: null, models: ["SM-T583"] },
+  {
+    name: "Galaxy Tab Advanced2",
+    type: "tablet",
+    releaseDate: null,
+    models: ["SM-T583"],
+  },
   {
     name: "Galaxy Tab A 8.0 (2018)",
+    type: "tablet",
     releaseDate: null,
     models: ["SM-T387", "SM-T387W", "SM-T387V", "SM-T387AA", "SM-T387T"],
   },
   {
     name: "Galaxy Tab S4 10.5",
+    type: "tablet",
     releaseDate: null,
     models: ["SM-T830", "SM-T835"],
   },
   {
     name: "Galaxy Tab A 10.5",
+    type: "tablet",
     releaseDate: null,
     models: ["SM-T590", "SM-T595"],
   },
   {
     name: "Galaxy A8s",
+    type: "phone",
     releaseDate: null,
     models: ["SM-G8870", "SM-G887F", "SM-G887N", "SM-A8s"],
   },
-  { name: "Galaxy A6s", releaseDate: null, models: ["SM-G6200"] },
+  {
+    name: "Galaxy A6s",
+    type: "phone",
+    releaseDate: null,
+    models: ["SM-G6200"],
+  },
   {
     name: "Galaxy A9 (2018)",
+    type: "phone",
     releaseDate: null,
     models: ["SM-A920F", "SM-A9200", "SM-A920N", "SM-A920X"],
   },
   {
     name: "Galaxy A7 (2018)",
+    type: "phone",
     releaseDate: null,
     models: [
       "SM-A750F",
@@ -1880,6 +2192,7 @@ export const phones: Device[] = [
   },
   {
     name: "Galaxy Note9",
+    type: "phone",
     releaseDate: "08-24-2018",
     models: [
       "SM-N960F",
@@ -1895,6 +2208,7 @@ export const phones: Device[] = [
   },
   {
     name: "Galaxy Watch",
+    type: "watch",
     releaseDate: null,
     models: [
       "SM-805U",
@@ -1911,21 +2225,25 @@ export const phones: Device[] = [
   },
   {
     name: "Galaxy J6+",
+    type: "phone",
     releaseDate: null,
     models: ["SM-J610F", "SM-J610F", "SM-J610G", "SM-J610FN"],
   },
   {
     name: "Galaxy J4 Core",
+    type: "phone",
     releaseDate: null,
     models: ["SM-J410D", "SM-J410F", "SM-J410G"],
   },
   {
     name: "Galaxy J4+",
+    type: "phone",
     releaseDate: null,
     models: ["SM-J415F", "SM-J415FN", "SM-J415G", "SM-J415GN", "SM-J415N"],
   },
   {
     name: "Galaxy J2 Core",
+    type: "phone",
     releaseDate: null,
     models: [
       "SM-J260M",
@@ -1938,9 +2256,15 @@ export const phones: Device[] = [
       "SM-S260DL",
     ],
   },
-  { name: "Galaxy On6", releaseDate: null, models: ["SM-J600GF"] },
+  {
+    name: "Galaxy On6",
+    type: "phone",
+    releaseDate: null,
+    models: ["SM-J600GF"],
+  },
   {
     name: "Galaxy J7 (2018)",
+    type: "phone",
     releaseDate: null,
     models: [
       "SM-J737F",
@@ -1955,6 +2279,7 @@ export const phones: Device[] = [
   },
   {
     name: "Galaxy J3 (2018)",
+    type: "phone",
     releaseDate: null,
     models: [
       "SM-J337U",
@@ -1969,12 +2294,19 @@ export const phones: Device[] = [
   },
   {
     name: "Galaxy A8 Star (A9 Star)",
+    type: "phone",
     releaseDate: null,
     models: ["SM-G885F", "SM-G8850", "SM-G885Y", "SM-G885S", "SM-G8858"],
   },
-  { name: "Galaxy S Light Luxury", releaseDate: null, models: ["SM-G8750"] },
+  {
+    name: "Galaxy S Light Luxury",
+    type: "phone",
+    releaseDate: null,
+    models: ["SM-G8750"],
+  },
   {
     name: "Galaxy J8",
+    type: "phone",
     releaseDate: null,
     models: [
       "SM-J810G",
@@ -1987,6 +2319,7 @@ export const phones: Device[] = [
   },
   {
     name: "Galaxy J6",
+    type: "phone",
     releaseDate: null,
     models: [
       "SM-J600G",
@@ -2001,11 +2334,13 @@ export const phones: Device[] = [
   },
   {
     name: "Galaxy J4",
+    type: "phone",
     releaseDate: null,
     models: ["SM-J400G", "SM-J400F", "SM-J400M"],
   },
   {
     name: "Galaxy A6+ (2018)",
+    type: "phone",
     releaseDate: null,
     models: [
       "SM-A605FN",
@@ -2020,6 +2355,7 @@ export const phones: Device[] = [
   },
   {
     name: "Galaxy A6 (2018)",
+    type: "phone",
     releaseDate: null,
     models: [
       "SM-A600F",
@@ -2037,16 +2373,19 @@ export const phones: Device[] = [
   },
   {
     name: "Galaxy J7 Duo",
+    type: "phone",
     releaseDate: null,
     models: ["SM-J720F", "SM-J720F/DS", "SM-J720M", "SM-J720M/DS"],
   },
   {
     name: "Galaxy J7 Prime 2",
+    type: "phone",
     releaseDate: null,
     models: ["SM-G611F", "SM-G611FF", "SM-G611M", "SM-G611MT", "SM-G611K"],
   },
   {
     name: "Galaxy S9+",
+    type: "phone",
     releaseDate: null,
     models: [
       "SM-G965F",
@@ -2062,6 +2401,7 @@ export const phones: Device[] = [
   },
   {
     name: "Galaxy S9",
+    type: "phone",
     releaseDate: "03-09-2018",
     models: [
       "SM-G960F",
@@ -2079,12 +2419,19 @@ export const phones: Device[] = [
   },
   {
     name: "Galaxy J2 Pro (2018)",
+    type: "phone",
     releaseDate: null,
     models: ["SM-J250F", "SM-J250G", "SM-J250F", "SM-J250M", "SM-J250Y"],
   },
-  { name: "Galaxy A8+ (2018)", releaseDate: null, models: ["SM-A730F"] },
+  {
+    name: "Galaxy A8+ (2018)",
+    type: "phone",
+    releaseDate: null,
+    models: ["SM-A730F"],
+  },
   {
     name: "Galaxy A8 (2018)",
+    type: "phone",
     releaseDate: null,
     models: [
       "SM-A530F",
@@ -2098,23 +2445,32 @@ export const phones: Device[] = [
   },
   {
     name: "Galaxy J2 (2017)",
+    type: "phone",
     releaseDate: null,
     models: ["SM-J200G", "SM-J200BT"],
   },
-  { name: "Galaxy Tab Active2", releaseDate: null, models: ["SM-T395"] },
+  {
+    name: "Galaxy Tab Active2",
+    type: "tablet",
+    releaseDate: null,
+    models: ["SM-T395"],
+  },
   {
     name: "Galaxy Tab A 8.0 (2017)",
+    type: "tablet",
     releaseDate: null,
     models: ["SM-T380", "SM-T385", "SM-T385M"],
   },
   {
     name: "Galaxy C7 (2017)",
+    type: "phone",
     releaseDate: null,
     models: ["SM-C710F", "SM-C7100", "SM-C7108"],
   },
-  { name: "Gear Sport", releaseDate: null, models: ["SM-R600"] },
+  { name: "Gear Sport", type: "watch", releaseDate: null, models: ["SM-R600"] },
   {
     name: "Galaxy Note8",
+    type: "phone",
     releaseDate: null,
     models: [
       "SM-N950F",
@@ -2129,11 +2485,13 @@ export const phones: Device[] = [
   },
   {
     name: "Galaxy S8 Active",
+    type: "phone",
     releaseDate: null,
     models: ["SM-G892A", "SM-G892U"],
   },
   {
     name: "Galaxy J7 V",
+    type: "phone",
     releaseDate: null,
     models: [
       "SM-J727V",
@@ -2151,26 +2509,31 @@ export const phones: Device[] = [
   },
   {
     name: "Galaxy Note FE",
+    type: "phone",
     releaseDate: null,
     models: ["SM-N935F", "SM-N935L", "SM-N935S", "SM-N935K"],
   },
   {
     name: "Galaxy J7 Max",
+    type: "phone",
     releaseDate: null,
     models: ["SM-G615F", "SM-G615FU"],
   },
   {
     name: "Galaxy J7 (2017)",
+    type: "phone",
     releaseDate: null,
     models: ["SM-J730F", "SM-J730FM", "SM-S727VL", "SM-J730K"],
   },
   {
     name: "Galaxy J7 Pro",
+    type: "phone",
     releaseDate: null,
     models: ["SM-J730G", "SM-J730GM"],
   },
   {
     name: "Galaxy J5 (2017)",
+    type: "phone",
     releaseDate: null,
     models: [
       "SM-J530F",
@@ -2186,6 +2549,7 @@ export const phones: Device[] = [
   },
   {
     name: "Galaxy J3 (2017)",
+    type: "phone",
     releaseDate: null,
     models: [
       "SM-J330F",
@@ -2204,12 +2568,19 @@ export const phones: Device[] = [
   },
   {
     name: "Galaxy Folder2",
+    type: "phone",
     releaseDate: null,
     models: ["SM-G1650W", "SM-G160N"],
   },
-  { name: "Z4", releaseDate: null, models: ["SM-Z400F", "SM-Z400Y"] },
+  {
+    name: "Z4",
+    type: "phone",
+    releaseDate: null,
+    models: ["SM-Z400F", "SM-Z400Y"],
+  },
   {
     name: "Galaxy S8",
+    type: "phone",
     releaseDate: null,
     models: [
       "SM-G950FD",
@@ -2234,6 +2605,7 @@ export const phones: Device[] = [
   },
   {
     name: "Galaxy S8+",
+    type: "phone",
     releaseDate: null,
     models: [
       "SM-G955F",
@@ -2256,29 +2628,39 @@ export const phones: Device[] = [
       "G955F",
     ],
   },
-  { name: "Gear S3 classic LTE", releaseDate: null, models: ["SM-R775S"] },
+  {
+    name: "Gear S3 classic LTE",
+    type: "watch",
+    releaseDate: null,
+    models: ["SM-R775S"],
+  },
   {
     name: "Galaxy C5 Pro",
+    type: "phone",
     releaseDate: null,
     models: ["SM-C5010", "SM-C5018"],
   },
   {
     name: "Galaxy XCover 4",
+    type: "phone",
     releaseDate: null,
     models: ["SM-G390F", "SM-G390Y", "SM-G390W"],
   },
   {
     name: "Galaxy Tab S3 9.7",
+    type: "tablet",
     releaseDate: null,
     models: ["SM-T820", "SM-T825", "SM-T825Y"],
   },
   {
     name: "Galaxy J1 mini prime",
+    type: "phone",
     releaseDate: null,
     models: ["SM-J106F", "SM-J106B", "SM-J106H", "SM-J106M"],
   },
   {
     name: "Galaxy J3 Emerge",
+    type: "phone",
     releaseDate: null,
     models: [
       "SM-J327A",
@@ -2292,16 +2674,19 @@ export const phones: Device[] = [
   },
   {
     name: "Galaxy C7 Pro",
+    type: "phone",
     releaseDate: null,
     models: ["SM-C7010", "SM-C701F", "SM-C7018"],
   },
   {
     name: "Galaxy A7 (2017)",
+    type: "phone",
     releaseDate: null,
     models: ["SM-A720F", "SM-A720S"],
   },
   {
     name: "Galaxy A5 (2017)",
+    type: "phone",
     releaseDate: null,
     models: [
       "SM-A520F",
@@ -2315,32 +2700,52 @@ export const phones: Device[] = [
   },
   {
     name: "Galaxy A3 (2017)",
+    type: "phone",
     releaseDate: null,
     models: ["SM-A320F", "SM-A320Y", "SM-A320FL"],
   },
-  { name: "Galaxy Grand Prime Plus", releaseDate: null, models: ["SM-G532F"] },
+  {
+    name: "Galaxy Grand Prime Plus",
+    type: "phone",
+    releaseDate: null,
+    models: ["SM-G532F"],
+  },
   {
     name: "Galaxy J2 Prime",
+    type: "phone",
     releaseDate: null,
     models: ["SM-G532G", "SM-G532M", "SM-G532G", "SM-G532F", "SM-G532MT"],
   },
   {
     name: "Galaxy C9 Pro",
+    type: "phone",
     releaseDate: null,
     models: ["SM-C9000", "SM-C900F", "SM-C9008", "SM-C900Y"],
   },
   {
     name: "Galaxy A8 (2016)",
+    type: "phone",
     releaseDate: null,
     models: ["SM-A8100", "SM-A810F", "SM-A810F", "SM-A810YZ", "SM-A810S"],
   },
-  { name: "Galaxy On8", releaseDate: null, models: ["SM-J710FN"] },
+  {
+    name: "Galaxy On8",
+    type: "phone",
+    releaseDate: null,
+    models: ["SM-J710FN"],
+  },
   {
     name: "Galaxy On7 (2016)",
+    type: "phone",
     releaseDate: null,
     models: ["SM-G6100", "SM-G610L", "SM-G610K"],
   },
-  { name: "Gear S3 classic", releaseDate: null, models: [""] },
-  { name: "Gear S3 frontier", releaseDate: null, models: [""] },
-  { name: "Gear S3 frontier LTE", releaseDate: null, models: [""] },
+  { name: "Gear S3 classic", type: "watch", releaseDate: null, models: [""] },
+  { name: "Gear S3 frontier", type: "watch", releaseDate: null, models: [""] },
+  {
+    name: "Gear S3 frontier LTE",
+    type: "watch",
+    releaseDate: null,
+    models: [""],
+  },
 ];
