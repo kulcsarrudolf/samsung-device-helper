@@ -13,7 +13,8 @@
     "pretest": "tsc -p tests",
     "test": "mocha",
     "prepack": "yarn run build",
-    "pack": "npm pack"
+    "pack": "yarn pack",
+    "publish": "yarn pack && npm publish"
   },
   "repository": {
     "type": "git",
