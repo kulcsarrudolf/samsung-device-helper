@@ -2,6 +2,86 @@ import { Device } from "../types";
 
 export const samsungDevices: Device[] = [
   {
+    name: "Galaxy Z Fold Special",
+    type: "phone",
+    releaseDate: "10-24-2024",
+    models: ["SM-F958N"],
+  },
+  {
+    name: "Galaxy A16",
+    type: "phone",
+    releaseDate: null,
+    models: ["SM-A165F", "SM-A165F/DS", "SM-A165M", "SM-A165M/DS"],
+  },
+  {
+    name: "Galaxy A16 5G",
+    type: "phone",
+    releaseDate: "10-25-2024",
+    models: [
+      "SM-A166B",
+      "SM-A166B/DS",
+      "SM-A166P",
+      "SM-A166P/DS",
+      "SM-A166E",
+      "SM-A166E/DS",
+    ],
+  },
+  {
+    name: "Galaxy S24 FE",
+    type: "phone",
+    releaseDate: "10-03-2024",
+    models: [
+      "SM-S721B",
+      "SM-S721B/DS",
+      "SM-S721U1",
+      "SM-S721U",
+      "SM-S721W",
+      "SM-S7210",
+      "SM-S721N",
+    ],
+  },
+  {
+    name: "Galaxy Tab S10 Ultra",
+    type: "phone",
+    releaseDate: "10-03-2024",
+    models: ["SM-X920", "SM-X926B", "SM-X926N", "SM-X920N"],
+  },
+  {
+    name: "Galaxy Tab S10+",
+    type: "phone",
+    releaseDate: "10-03-2024",
+    models: ["SM-X820", "SM-X826B", "SM-X820N", "SM-X826N"],
+  },
+  {
+    name: "Galaxy M55s",
+    type: "phone",
+    releaseDate: "09-26-2024",
+    models: ["SM-M558B", "SM-M558B/DS"],
+  },
+  {
+    name: "Galaxy F05",
+    type: "phone",
+    releaseDate: "09-20-2024",
+    models: ["SM-E055F", "SM-E055F/DS"],
+  },
+  {
+    name: "Galaxy M05",
+    releaseDate: "09-10-2024",
+    models: ["SM-M055F", "SM-M055F/DS"],
+  },
+  {
+    name: "Galaxy A06",
+    type: "phone",
+    releaseDate: "08-22-2024",
+    models: ["SM-A065F", "SM-A065F/DS", "SM-A065M", "SM-A065M/DS"],
+  },
+  {
+    name: "Galaxy F14 4G",
+    type: "phone",
+    releaseDate: "09-05-2024",
+    models: ["SM-E145F", "SM-E145F/DS"],
+  },
+  {
     name: "Galaxy Z Fold6",
     type: "phone",
     releaseDate: "07-24-2024",
