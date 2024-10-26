@@ -1,6 +1,6 @@
 {
   "name": "samsung-device-helper",
-  "version": "0.0.8",
+  "version": "0.0.9",
   "description": "A utility to help you identify Samsung devices",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -14,7 +14,7 @@
     "test": "mocha",
     "prepack": "yarn run build",
     "pack": "yarn pack",
-    "publish": "yarn pack && npm publish"
+    "publish": "yarn publish"
   },
   "repository": {
     "type": "git",
