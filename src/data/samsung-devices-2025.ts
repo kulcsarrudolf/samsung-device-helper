@@ -2,7 +2,7 @@ import { Device } from "../types";
 
 export const samsungDevices2025: Device[] = [
   {
-    name: "Samsung Galaxy S25",
+    name: "Galaxy S25",
     type: "phone",
     releaseDate: "01-22-2025",
     models: [
@@ -18,7 +18,7 @@ export const samsungDevices2025: Device[] = [
     ],
   },
   {
-    name: "Samsung Galaxy S25+",
+    name: "Galaxy S25+",
     type: "phone",
     releaseDate: "01-22-2025",
     models: [
@@ -34,7 +34,7 @@ export const samsungDevices2025: Device[] = [
     ],
   },
   {
-    name: "Samsung Galaxy S25 Ultra",
+    name: "Galaxy S25 Ultra",
     type: "phone",
     releaseDate: "01-22-2025",
     models: [
@@ -48,5 +48,106 @@ export const samsungDevices2025: Device[] = [
       "SM-S938E",
       "SM-S938E/DS",
     ],
+  },
+  {
+    name: "Galaxy F06 5G",
+    releaseDate: "02-19-2025",
+    type: "phone",
+    models: ["SM-E066B", "SM-E066B/DS"],
+  },
+  {
+    name: "Galaxy A06 5G",
+    releaseDate: "02-19-2025",
+    type: "phone",
+    models: ["SM-A066B", "SM-A066B/DS"],
+  },
+  {
+    name: "Galaxy M06",
+    releaseDate: "03-07-2025",
+    type: "phone",
+    models: ["SM-M066B", "SM-M066B/DS"],
+  },
+  {
+    name: "Galaxy M16",
+    releaseDate: "03-05-2025",
+    type: "phone",
+    models: ["SM-M166P", "SM-M166P/DS"],
+  },
+  {
+    name: "Galaxy A26",
+    releaseDate: "03-19-2025",
+    type: "phone",
+    models: [
+      "SM-A266E",
+      "SM-A266E/DS",
+      "SM-A266E/DSN",
+      "SM-A266B",
+      "SM-A266B/DS",
+      "SM-A266B/DSN",
+      "SM-A266U",
+      "SM-A266U1",
+    ],
+  },
+  {
+    name: "Galaxy A36",
+    releaseDate: "03-10-2025",
+    type: "phone",
+    models: [
+      "SM-A366E",
+      "SM-A366E/DS",
+      "SM-A366B",
+      "SM-A366B/DS",
+      "SM-A366U",
+      "SM-A366U1",
+    ],
+  },
+  {
+    name: "Galaxy A56",
+    releaseDate: "03-10-2025",
+    type: "phone",
+    models: [
+      "SM-A566V",
+      "SM-A566B",
+      "SM-A566B/DS",
+      "SM-A566E",
+      "SM-A566E/DS",
+      "SM-A5660",
+    ],
+  },
+  {
+    name: "Galaxy F16",
+    releaseDate: "03-13-2025",
+    type: "phone",
+    models: ["SM-E166P", "SM-E166P/DS"],
+  },
+  {
+    name: "Galaxy Tab S10 FE",
+    releaseDate: "04-03-2025",
+    type: "tablet",
+    models: ["SM-X520", "SM-X526", "SM-X526B"],
+  },
+  {
+    name: "Galaxy Tab S10 FE+",
+    releaseDate: "04-03-2025",
+    type: "tablet",
+    models: ["SM-X620", "SM-X626", "SM-X626B"],
+  },
+  {
+    name: "Galaxy Tab Active5 Pro",
+    releaseDate: "04-25-2025",
+    type: "tablet",
+    models: ["SM-X356B", "SM-X350"],
+  },
+  {
+    name: "Galaxy XCover7 Pro",
+    releaseDate: "04-25-2025",
+    type: "phone",
+    models: ["SM-G766B", "SM-G766BU1", "SM-G766B/DS"],
+  },
+  {
+    name: "Galaxy M56",
+    releaseDate: "04-17-2025",
+    type: "phone",
+    models: ["SM-M566B", "SM-M566B/DS"],
   },
 ];
