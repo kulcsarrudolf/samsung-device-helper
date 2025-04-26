@@ -1,37 +1,44 @@
 import { samsungDevices } from "./data/samsung-devices";
 import { Device } from "./types";
 
-export const getNameByModel = (model: string): string => {
-  return (
-    samsungDevices.find((device) => device?.models?.includes(model))?.name ||
-    model
-  );
-};
+const modelToDeviceMap = new Map<string, Device>();
 
-export const getPhoneByModel = (model: string): Device | undefined => {
-  return samsungDevices.find((device) => device?.models?.includes(model));
+samsungDevices.forEach((device) => {
+  if (device.models) {
+    device.models.forEach((model) => {
+      modelToDeviceMap.set(model, device);
+    });
+  }
+});
+
+const phoneDevices = samsungDevices.filter((device) => device.type === "phone");
+const tabletDevices = samsungDevices.filter(
+  (device) => device.type === "tablet"
+);
+const watchDevices = samsungDevices.filter((device) => device.type === "watch");
+
+export const getNameByModel = (model: string): string => {
+  return modelToDeviceMap.get(model)?.name || model;
 };
 
 export const getDeviceByModel = (model: string): Device | undefined => {
-  return samsungDevices.find((device) => device?.models?.includes(model));
+  return modelToDeviceMap.get(model);
 };
 
+export const getPhoneByModel = getDeviceByModel;
+
 export const getAllSamsungPhones = (): Device[] => {
-  return samsungDevices.filter((device) => device.type === "phone");
+  return phoneDevices;
 };
 
 export const getAllSamsungTablets = (): Device[] => {
-  return samsungDevices.filter((device) => device.type === "tablet");
+  return tabletDevices;
 };
 
 export const getAllSamsungWatches = (): Device[] => {
-  return samsungDevices.filter((device) => device.type === "watch");
+  return watchDevices;
 };
 
 export const getAllSamsungDevices = (): Device[] => {
-  return [
-    ...getAllSamsungPhones(),
-    ...getAllSamsungTablets(),
-    ...getAllSamsungWatches(),
-  ];
+  return samsungDevices;
 };
