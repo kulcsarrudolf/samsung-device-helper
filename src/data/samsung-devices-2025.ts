@@ -150,4 +150,16 @@ export const samsungDevices2025: Device[] = [
     type: "phone",
     models: ["SM-M566B", "SM-M566B/DS"],
   },
+  {
+    name: "Galaxy F56",
+    releaseDate: "05-07-2025",
+    type: "phone",
+    models: ["SM-E566B", "SM-E566B/DS"],
+  },
+  {
+    name: "Galaxy S25 Edge",
+    releaseDate: "05-29-2025",
+    type: "phone",
+    models: ["SM-S937U", "SM-S937U1", "SM-S937B", "SM-S937B/DS", "SM-S9370"],
+  },
 ];
