@@ -217,4 +217,41 @@ export const samsungDevices2025: Device[] = [
     type: "phone",
     models: ["SM-A176B", "SM-A176B/DS"],
   },
+  {
+    name: "Galaxy A07 4G",
+    releaseDate: "08-25-2025",
+    type: "phone",
+    models: [
+      "SM-A075B",
+      "SM-A075B/DS",
+      "SM-A075F",
+      "SM-A075F/DS",
+      "SM-A075M",
+      "SM-A075M/DS",
+    ],
+  },
+  {
+    name: "Galaxy Tab S10 Lite",
+    releaseDate: "08-25-2025",
+    type: "tablet",
+    models: ["SM-X400", "SM-X406", "SM-X406B"],
+  },
+  {
+    name: "Galaxy Tab S11",
+    releaseDate: "09-04-2025",
+    type: "tablet",
+    models: ["SM-X730", "SM-X736", "SM-X736B"],
+  },
+  {
+    name: "Galaxy Tab S11 Ultra",
+    releaseDate: "09-04-2025",
+    type: "tablet",
+    models: ["SM-X930", "SM-X936B", "SM-X936N", "SM-X930N"],
+  },
+  {
+    name: "Galaxy S25 FE",
+    releaseDate: "09-04-2025",
+    type: "phone",
+    models: ["SM-S731B", "SM-S731B/DS"],
+  },
 ];
