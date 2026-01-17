@@ -1,7 +1,9 @@
 import { Device } from "../types";
 import { samsungDevices2025 } from "./samsung-devices-2025";
+import { samsungDevices2026 } from "./samsung-devices-2026";
 
 export const samsungDevices: Device[] = [
+  ...samsungDevices2026,
   ...samsungDevices2025,
   {
     name: "Galaxy Z Fold Special",
