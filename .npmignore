@@ -1,0 +1,20 @@
+# Source files
+src/
+
+# Tests
+tests/
+
+# Config files
+tsconfig.json
+.github/
+
+# Development files
+.git/
+.gitignore
+.vscode/
+*.log
+
+# Yarn
+yarn.lock
+.yarn/
+.yarnrc.yml

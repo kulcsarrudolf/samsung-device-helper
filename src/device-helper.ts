@@ -13,7 +13,7 @@ samsungDevices.forEach((device) => {
 
 const phoneDevices = samsungDevices.filter((device) => device.type === "phone");
 const tabletDevices = samsungDevices.filter(
-  (device) => device.type === "tablet"
+  (device) => device.type === "tablet",
 );
 const watchDevices = samsungDevices.filter((device) => device.type === "watch");
 
