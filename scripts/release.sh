@@ -13,7 +13,7 @@ fi
 yarn test
 
 # Bump version
-npm version "$BUMP" --no-git-tag-version
+yarn version --"$BUMP" --no-git-tag-version
 
 # Commit, tag, and push
 VERSION=$(node -p "require('./package.json').version")
