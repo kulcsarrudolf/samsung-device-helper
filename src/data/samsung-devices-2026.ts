@@ -42,4 +42,20 @@ export const samsungDevices2026: Device[] = [
       "SM-S947E/DS",
     ],
   },
+  {
+    name: "Galaxy S26 Ultra",
+    releaseDate: "03-06-2026",
+    type: "phone",
+    models: [
+      "SM-S948B",
+      "SM-S948B/DS",
+      "SM-S948U",
+      "SM-S948U1",
+      "SM-S948W",
+      "SM-S948N",
+      "SM-S9480",
+      "SM-S948E",
+      "SM-S948E/DS"
+    ],
+  }
 ];
