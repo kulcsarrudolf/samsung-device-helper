@@ -12,6 +12,9 @@ fi
 # Run tests
 yarn test
 
+git fetch origin
+git rebase origin/main
+
 # Bump version
 yarn version --"$BUMP" --no-git-tag-version
 
