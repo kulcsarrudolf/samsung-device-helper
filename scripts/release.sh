@@ -24,6 +24,7 @@ git tag "v$VERSION"
 # Release
 git push origin main --tags
 git checkout release
-git rebase main
+git fetch origin main
+git rebase origin/main
 git push origin release --force-with-lease
 git checkout main
