@@ -1,5 +1,11 @@
 # Samsung Device Helper
 
+[![npm version](https://img.shields.io/npm/v/samsung-device-helper)](https://www.npmjs.com/package/samsung-device-helper)
+[![license](https://img.shields.io/npm/l/samsung-device-helper)](https://github.com/kulcsarrudolf/samsung-device-helper/blob/main/LICENSE)
+[![downloads](https://img.shields.io/npm/dm/samsung-device-helper)](https://www.npmjs.com/package/samsung-device-helper)
+[![GitHub Stars](https://img.shields.io/github/stars/kulcsarrudolf/samsung-device-helper?style=social)](https://github.com/kulcsarrudolf/samsung-device-helper)
+[![tests](https://img.shields.io/github/actions/workflow/status/kulcsarrudolf/samsung-device-helper/publish.yml?label=tests)](https://github.com/kulcsarrudolf/samsung-device-helper/actions)
+
 `samsung-device-helper` is an npm package designed to provide a comprehensive list of Samsung devices, including phones, tablets, and watches. The package offers utility functions to retrieve device names by model and fetch lists of devices by category. **Note:** the list of phones includes models released after 2017, ensuring up-to-date information on the latest Samsung phones.
 
 ## Installation
