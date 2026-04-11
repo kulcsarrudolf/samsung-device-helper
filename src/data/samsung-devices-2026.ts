@@ -57,5 +57,39 @@ export const samsungDevices2026: Device[] = [
       "SM-S948E",
       "SM-S948E/DS"
     ],
+  },
+  {
+    name: "Galaxy M17e",
+    releaseDate: "03-17-2026",
+    type: "phone",
+    models: [
+      "SM-M076B"
+    ],
+  },
+  {
+    name: "Galaxy A57",
+    releaseDate: "04-09-2026",
+    type: "phone",
+    models: [
+      "SM-A576B",
+      "SM-A576Q",
+      "SM-A576U1",
+      "SM-A576W",
+      "SM-A576Z",
+      "SM-A5760"
+    ],
+  },
+  {
+    name: "Galaxy A37",
+    releaseDate: "04-09-2026",
+    type: "phone",
+    models: [
+      "SM-A376E",
+      "SM-A376B",
+      "SM-A376U",
+      "SM-A376U1",
+      "SM-A376W",
+      "SM-A3760"
+    ],
   }
 ];
