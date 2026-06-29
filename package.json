@@ -17,6 +17,8 @@
     "publish": "yarn publish",
     "format": "prettier --write 'src/**/*.ts' 'tests/**/*.ts'",
     "format:check": "prettier --check 'src/**/*.ts' 'tests/**/*.ts'",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix",
     "prepare": "husky",
     "release": "bash scripts/release.sh"
   },
@@ -46,13 +48,16 @@
     "@types/sinon": "^10.0.15",
     "chai": "^4.3.7",
     "chalk": "^4.1.2",
+    "eslint": "^10.6.0",
+    "eslint-config-prettier": "^10.1.8",
     "husky": "^9.1.7",
     "lint-staged": "^16.2.7",
     "mocha": "^10.2.0",
     "prettier": "^3.8.1",
     "shx": "^0.3.4",
     "sinon": "^15.2.0",
-    "typescript": "^5.1.6"
+    "typescript": "^5.1.6",
+    "typescript-eslint": "^8.62.0"
   },
   "engines": {
     "node": ">=18"
