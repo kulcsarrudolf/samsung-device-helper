@@ -1,4 +1,4 @@
-export type DeviceType = "phone" | "tablet" | "watch";
+export type DeviceType = 'phone' | 'tablet' | 'watch';
 
 export type Device = {
   name: string;
