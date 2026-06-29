@@ -1,2 +1,2 @@
-export * from "./types";
-export * from "./device-helper";
+export * from './types';
+export * from './device-helper';

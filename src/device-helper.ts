@@ -1,5 +1,5 @@
-import { samsungDevices } from "./data/samsung-devices";
-import { Device } from "./types";
+import { samsungDevices } from './data/samsung-devices';
+import { Device } from './types';
 
 const modelToDeviceMap = new Map<string, Device>();
 
@@ -11,11 +11,9 @@ samsungDevices.forEach((device) => {
   }
 });
 
-const phoneDevices = samsungDevices.filter((device) => device.type === "phone");
-const tabletDevices = samsungDevices.filter(
-  (device) => device.type === "tablet",
-);
-const watchDevices = samsungDevices.filter((device) => device.type === "watch");
+const phoneDevices = samsungDevices.filter((device) => device.type === 'phone');
+const tabletDevices = samsungDevices.filter((device) => device.type === 'tablet');
+const watchDevices = samsungDevices.filter((device) => device.type === 'watch');
 
 export const getNameByModel = (model: string): string => {
   return modelToDeviceMap.get(model)?.name || model;
