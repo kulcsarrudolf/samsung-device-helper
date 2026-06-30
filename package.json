@@ -22,14 +22,14 @@
     "test": "mocha",
     "coverage": "tsc -p tests && c8 mocha",
     "prepack": "yarn run build",
-    "pack": "yarn pack",
-    "publish": "yarn publish",
     "format": "prettier --write 'src/**/*.ts' 'tests/**/*.ts'",
     "format:check": "prettier --check 'src/**/*.ts' 'tests/**/*.ts'",
     "lint": "eslint .",
     "lint:fix": "eslint . --fix",
     "prepare": "husky",
-    "release": "bash scripts/release.sh"
+    "changeset": "changeset",
+    "version-packages": "changeset version",
+    "release": "yarn build && changeset publish"
   },
   "repository": {
     "type": "git",
@@ -51,6 +51,7 @@
     "url": "https://github.com/kulcsarrudolf/samsung-device-helper/issues"
   },
   "devDependencies": {
+    "@changesets/cli": "^2.31.0",
     "@commitlint/cli": "^19",
     "@commitlint/config-conventional": "^19",
     "@types/chai": "^4.3.5",
