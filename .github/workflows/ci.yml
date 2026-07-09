@@ -41,3 +41,6 @@ jobs:
 
       - name: Build
         run: yarn build
+
+      - name: Check generated data is up to date
+        run: git diff --exit-code src/generated

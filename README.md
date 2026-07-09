@@ -81,6 +81,23 @@ const devices = getAllSamsungDevices();
 console.log(devices);
 ```
 
+### Smaller bundles with subpath imports
+
+The main entry ships the full device catalog.
+If you only need part of it, import from a subpath so your bundle carries only that data:
+
+```javascript
+// Only the model-to-name mapping (smallest, ideal for display purposes)
+import { getNameByModel } from "samsung-device-helper/model-names";
+
+// Only one device category
+import { getAllSamsungPhones } from "samsung-device-helper/phones";
+import { getAllSamsungTablets } from "samsung-device-helper/tablets";
+import { getAllSamsungWatches } from "samsung-device-helper/watches";
+```
+
+All subpath functions behave identically to their main-entry counterparts.
+
 ## Contributing
 
 If you'd like to contribute to this project, please submit a pull request or open an issue on GitHub.

@@ -10,6 +10,26 @@
       "types": "./dist/index.d.ts",
       "import": "./dist/index.mjs",
       "require": "./dist/index.js"
+    },
+    "./phones": {
+      "types": "./dist/phones.d.ts",
+      "import": "./dist/phones.mjs",
+      "require": "./dist/phones.js"
+    },
+    "./tablets": {
+      "types": "./dist/tablets.d.ts",
+      "import": "./dist/tablets.mjs",
+      "require": "./dist/tablets.js"
+    },
+    "./watches": {
+      "types": "./dist/watches.d.ts",
+      "import": "./dist/watches.mjs",
+      "require": "./dist/watches.js"
+    },
+    "./model-names": {
+      "types": "./dist/model-names.d.ts",
+      "import": "./dist/model-names.mjs",
+      "require": "./dist/model-names.js"
     }
   },
   "sideEffects": false,
@@ -18,6 +38,8 @@
   ],
   "scripts": {
     "build": "tsup",
+    "prebuild": "yarn generate-data",
+    "generate-data": "tsx scripts/generate-data.ts && prettier --write 'src/generated/**/*.ts'",
     "test": "vitest run",
     "test:watch": "vitest",
     "coverage": "vitest run --coverage",
