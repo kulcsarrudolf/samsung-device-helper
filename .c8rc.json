@@ -1,7 +1,0 @@
-{
-  "all": true,
-  "src": ["src"],
-  "include": ["build/test/src/**/*.js"],
-  "reporter": ["text", "lcov"],
-  "report-dir": "coverage"
-}
