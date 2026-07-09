@@ -53,7 +53,8 @@
     "prepare": "husky",
     "changeset": "changeset",
     "version-packages": "changeset version",
-    "release": "yarn build && changeset publish"
+    "release": "changeset version && yarn build && changeset publish",
+    "postrelease": "echo 'If a new version was published, commit and push it: git add -A && git commit -m \"chore: release\" && git push --follow-tags'"
   },
   "repository": {
     "type": "git",
