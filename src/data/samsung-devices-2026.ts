@@ -10,11 +10,13 @@ export const samsungDevices2026: Device[] = [
   {
     name: 'Galaxy F70e',
     releaseDate: '02-17-2026',
+    type: 'phone',
     models: ['SM-E076B', 'SM-E076B/DS'],
   },
   {
     name: 'Galaxy S26',
     releaseDate: '03-06-2026',
+    type: 'phone',
     models: [
       'SM-S942B',
       'SM-S942B/DS',
@@ -30,6 +32,7 @@ export const samsungDevices2026: Device[] = [
   {
     name: 'Galaxy S26+',
     releaseDate: '03-06-2026',
+    type: 'phone',
     models: [
       'SM-S947B',
       'SM-S947B/DS',
