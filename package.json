@@ -51,10 +51,9 @@
     "lint": "eslint .",
     "lint:fix": "eslint . --fix",
     "prepare": "husky",
-    "changeset": "changeset",
-    "version-packages": "changeset version",
-    "release": "changeset version && yarn build && changeset publish",
-    "postrelease": "echo 'If a new version was published, commit and push it: git add -A && git commit -m \"chore: release\" && git push --follow-tags'"
+    "release": "bash scripts/release.sh",
+    "release:minor": "bash scripts/release.sh minor",
+    "release:major": "bash scripts/release.sh major"
   },
   "repository": {
     "type": "git",
@@ -76,7 +75,6 @@
     "url": "https://github.com/kulcsarrudolf/samsung-device-helper/issues"
   },
   "devDependencies": {
-    "@changesets/cli": "^2.31.0",
     "@commitlint/cli": "^19",
     "@commitlint/config-conventional": "^19",
     "@types/node": "^20.4.2",
