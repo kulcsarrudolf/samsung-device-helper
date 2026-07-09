@@ -7,6 +7,11 @@ on:
 
 concurrency: ${{ github.workflow }}-${{ github.ref }}
 
+env:
+  # Skip husky git hooks in CI: the changesets action's "Version Packages"
+  # commit is not a conventional-commit message and would fail commitlint.
+  HUSKY: 0
+
 jobs:
   release:
     runs-on: ubuntu-latest
