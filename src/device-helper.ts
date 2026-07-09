@@ -1,42 +1,56 @@
 import { samsungDevices } from './data/samsung-devices';
-import { Device } from './types';
+import { Device, DeviceType } from './types';
 
-const modelToDeviceMap = new Map<string, Device>();
+const normalizeModel = (model: string): string => model.trim().toUpperCase();
 
-samsungDevices.forEach((device) => {
-  if (device.models) {
-    device.models.forEach((model) => {
-      modelToDeviceMap.set(model, device);
-    });
+let modelToDeviceMap: Map<string, Device> | undefined;
+
+const getModelToDeviceMap = (): Map<string, Device> => {
+  if (!modelToDeviceMap) {
+    modelToDeviceMap = new Map();
+    for (const device of samsungDevices) {
+      for (const model of device.models) {
+        modelToDeviceMap.set(normalizeModel(model), device);
+      }
+    }
   }
-});
+  return modelToDeviceMap;
+};
 
-const phoneDevices = samsungDevices.filter((device) => device.type === 'phone');
-const tabletDevices = samsungDevices.filter((device) => device.type === 'tablet');
-const watchDevices = samsungDevices.filter((device) => device.type === 'watch');
+const getDevicesByType = (type: DeviceType): Device[] =>
+  samsungDevices.filter((device) => device.type === type);
 
+/**
+ * Returns the marketing name for a model code, or the model itself when unknown.
+ * Lookup is case-insensitive and ignores surrounding whitespace.
+ */
 export const getNameByModel = (model: string): string => {
-  return modelToDeviceMap.get(model)?.name || model;
+  return getModelToDeviceMap().get(normalizeModel(model))?.name || model;
 };
 
+/**
+ * Returns the device for a model code, or undefined when unknown.
+ * Lookup is case-insensitive and ignores surrounding whitespace.
+ */
 export const getDeviceByModel = (model: string): Device | undefined => {
-  return modelToDeviceMap.get(model);
+  return getModelToDeviceMap().get(normalizeModel(model));
 };
 
+/** @deprecated Use {@link getDeviceByModel}; this returns tablets and watches too. */
 export const getPhoneByModel = getDeviceByModel;
 
 export const getAllSamsungPhones = (): Device[] => {
-  return phoneDevices;
+  return getDevicesByType('phone');
 };
 
 export const getAllSamsungTablets = (): Device[] => {
-  return tabletDevices;
+  return getDevicesByType('tablet');
 };
 
 export const getAllSamsungWatches = (): Device[] => {
-  return watchDevices;
+  return getDevicesByType('watch');
 };
 
 export const getAllSamsungDevices = (): Device[] => {
-  return samsungDevices;
+  return [...samsungDevices];
 };
