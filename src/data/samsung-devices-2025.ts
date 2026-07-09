@@ -266,7 +266,7 @@ export const samsungDevices2025: Device[] = [
     name: 'Galaxy M17',
     releaseDate: '10-13-2025',
     type: 'phone',
-    models: [''],
+    models: ['SM-M176B', 'SM-M176B/DS'],
   },
   {
     name: 'Galaxy Z TriFold',
