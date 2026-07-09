@@ -1,10 +1,10 @@
-import { expect } from 'chai';
+import { describe, it, expect } from 'vitest';
 import { getDeviceByModel, getPhoneByModel } from '../src/device-helper';
 
 describe('getDeviceByModel', () => {
   it('returns the correct device for a known phone model', () => {
     const device = getDeviceByModel('SM-G991B');
-    expect(device).to.deep.equal({
+    expect(device).toEqual({
       name: 'Galaxy S21 5G',
       releaseDate: '01-29-2021',
       type: 'phone',
@@ -24,7 +24,7 @@ describe('getDeviceByModel', () => {
 
   it('returns the correct device for a known tablet model', () => {
     const device = getDeviceByModel('SM-T970');
-    expect(device).to.deep.equal({
+    expect(device).toEqual({
       name: 'Galaxy Tab S7+',
       type: 'tablet',
       releaseDate: '08-21-2020',
@@ -34,7 +34,7 @@ describe('getDeviceByModel', () => {
 
   it('returns the correct device for a known watch model', () => {
     const device = getDeviceByModel('SM-R800');
-    expect(device).to.deep.equal({
+    expect(device).toEqual({
       name: 'Galaxy Watch',
       releaseDate: null,
       type: 'watch',
@@ -54,14 +54,14 @@ describe('getDeviceByModel', () => {
   });
 
   it('returns undefined for an unknown model', () => {
-    expect(getDeviceByModel('UNKNOWN_MODEL')).to.be.undefined;
+    expect(getDeviceByModel('UNKNOWN_MODEL')).toBeUndefined();
   });
 });
 
 describe('getPhoneByModel', () => {
   it('returns the correct phone for a known model', () => {
     const phone = getPhoneByModel('SM-G991B');
-    expect(phone).to.deep.equal({
+    expect(phone).toEqual({
       name: 'Galaxy S21 5G',
       releaseDate: '01-29-2021',
       type: 'phone',
@@ -80,6 +80,6 @@ describe('getPhoneByModel', () => {
   });
 
   it('returns undefined for an unknown model', () => {
-    expect(getPhoneByModel('UNKNOWN_MODEL')).to.be.undefined;
+    expect(getPhoneByModel('UNKNOWN_MODEL')).toBeUndefined();
   });
 });

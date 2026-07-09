@@ -30,6 +30,9 @@ jobs:
       - name: Format check
         run: yarn format:check
 
+      - name: Typecheck
+        run: yarn typecheck
+
       - name: Test with coverage
         run: yarn coverage
 

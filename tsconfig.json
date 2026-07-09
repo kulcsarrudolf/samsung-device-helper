@@ -1,15 +1,13 @@
 {
   "compilerOptions": {
     "target": "es2016",
-    "module": "CommonJS",
+    "module": "esnext",
+    "moduleResolution": "bundler",
     "esModuleInterop": true,
     "forceConsistentCasingInFileNames": true,
     "strict": true,
     "skipLibCheck": true,
-
-    "rootDir": "./src",
-    "outDir": "dist",
-    "declaration": true
+    "noEmit": true
   },
-  "include": ["src/**/*"]
+  "include": ["src/**/*", "tests/**/*", "vitest.config.ts", "tsup.config.ts"]
 }

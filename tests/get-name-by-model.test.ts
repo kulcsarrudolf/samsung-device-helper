@@ -1,12 +1,12 @@
-import { expect } from 'chai';
+import { describe, it, expect } from 'vitest';
 import { getNameByModel } from '../src/device-helper';
 
 describe('getNameByModel', () => {
   it('returns correct name for known model', () => {
-    expect(getNameByModel('SM-G991B')).to.equal('Galaxy S21 5G');
+    expect(getNameByModel('SM-G991B')).toBe('Galaxy S21 5G');
   });
 
   it('returns the model itself for an unknown model', () => {
-    expect(getNameByModel('UNKNOWN_MODEL')).to.equal('UNKNOWN_MODEL');
+    expect(getNameByModel('UNKNOWN_MODEL')).toBe('UNKNOWN_MODEL');
   });
 });
