@@ -39,13 +39,13 @@ export const samsungDevices: Device[] = [
   },
   {
     name: 'Galaxy Tab S10 Ultra',
-    type: 'phone',
+    type: 'tablet',
     releaseDate: '10-03-2024',
     models: ['SM-X920', 'SM-X926B', 'SM-X926N', 'SM-X920N'],
   },
   {
     name: 'Galaxy Tab S10+',
-    type: 'phone',
+    type: 'tablet',
     releaseDate: '10-03-2024',
     models: ['SM-X820', 'SM-X826B', 'SM-X820N', 'SM-X826N'],
   },
@@ -63,6 +63,7 @@ export const samsungDevices: Device[] = [
   },
   {
     name: 'Galaxy M05',
+    type: 'phone',
     releaseDate: '09-10-2024',
     models: ['SM-M055F', 'SM-M055F/DS'],
   },
@@ -368,13 +369,13 @@ export const samsungDevices: Device[] = [
     name: 'Galaxy Watch6 Classic',
     type: 'watch',
     releaseDate: '08-11-2023',
-    models: [''],
+    models: ['SM-R950', 'SM-R955', 'SM-R960', 'SM-R965'],
   },
   {
     name: 'Galaxy Watch6',
     type: 'watch',
     releaseDate: '08-11-2023',
-    models: [''],
+    models: ['SM-R930', 'SM-R935', 'SM-R940', 'SM-R945'],
   },
   {
     name: 'Galaxy M34 5G',
@@ -915,16 +916,11 @@ export const samsungDevices: Device[] = [
     models: ['SM-R860', 'SM-R870'],
   },
   {
-    name: 'Galaxy A12 (India)',
-    type: 'phone',
-    releaseDate: '08-12-2021',
-    models: ['SM-A127F', 'SM-A127F/DS'],
-  },
-  {
     name: 'Galaxy A12 Nacho',
     type: 'phone',
     releaseDate: '08-09-2021',
     models: ['SM-A127F/DSN', 'SM-A127F/DS', 'SM-A127F', 'SM-A127M', 'SM-A127U'],
+    aliases: ['Galaxy A12 (India)'],
   },
   {
     name: 'Galaxy M21 2021',
@@ -1058,7 +1054,7 @@ export const samsungDevices: Device[] = [
     name: 'Galaxy M12 (India)',
     type: 'phone',
     releaseDate: '03-18-2021',
-    models: ['SM-M127F', 'SM-M127F/DS', 'SM-F127G', 'SM-F127G/DS', 'SM-M127G', 'SM-M127G/DS'],
+    models: ['SM-M127F', 'SM-M127F/DS', 'SM-M127G', 'SM-M127G/DS'],
   },
   {
     name: 'Galaxy S21 Ultra 5G',
@@ -1174,22 +1170,11 @@ export const samsungDevices: Device[] = [
     ],
   },
   {
-    name: 'Galaxy M21s',
-    type: 'phone',
-    releaseDate: '11-06-2020',
-    models: ['SM-F415F', 'SM-F415F/DS'],
-  },
-  {
-    name: 'Galaxy M31 Prime',
-    type: 'phone',
-    releaseDate: '10-17-2020',
-    models: ['SM-M315F/DS'],
-  },
-  {
     name: 'Galaxy F41',
     type: 'phone',
     releaseDate: '10-16-2020',
     models: ['SM-F415F/DS', 'SM-F415F'],
+    aliases: ['Galaxy M21s'],
   },
   {
     name: 'Galaxy Tab Active3',
@@ -1464,6 +1449,7 @@ export const samsungDevices: Device[] = [
     type: 'phone',
     releaseDate: '03-05-2020',
     models: ['SM-M315F', 'SM-M315F/DS', 'SM-M315F/DSN'],
+    aliases: ['Galaxy M31 Prime'],
   },
   {
     name: 'Galaxy S20 Ultra 5G',
@@ -1480,12 +1466,7 @@ export const samsungDevices: Device[] = [
       'SM-G988W',
       'SCG03',
     ],
-  },
-  {
-    name: 'Galaxy S20 Ultra',
-    type: 'phone',
-    releaseDate: '03-15-2020',
-    models: ['SM-G988B/DS'],
+    aliases: ['Galaxy S20 Ultra'],
   },
   {
     name: 'Galaxy S20+ 5G',
@@ -1553,7 +1534,7 @@ export const samsungDevices: Device[] = [
       'SM-F700U/DS',
       'SM-F700U1/DS',
       'SM-F700N',
-      'M-F7000',
+      'SM-F7000',
       'SM-F700W/DS',
       'SM-F700U1',
     ],
@@ -1732,16 +1713,7 @@ export const samsungDevices: Device[] = [
     name: 'Galaxy Note10',
     type: 'phone',
     releaseDate: '08-23-2019',
-    models: [
-      'SM-N970F',
-      'SM-N970U',
-      'SM-N970U1',
-      'SM-N9700',
-      'SM-N970W',
-      'SM-N9700',
-      'SM-N970N',
-      'SM-N970X',
-    ],
+    models: ['SM-N970F', 'SM-N970U', 'SM-N970U1', 'SM-N9700', 'SM-N970W', 'SM-N970N', 'SM-N970X'],
   },
   {
     name: 'Galaxy Watch Active2',
@@ -1914,7 +1886,6 @@ export const samsungDevices: Device[] = [
       'SM-A505U',
       'SM-A505GT',
       'SM-A505U1',
-      'SM-A505G',
       'SM-A505N',
       'SM-S506DL',
     ],
@@ -1935,7 +1906,6 @@ export const samsungDevices: Device[] = [
       'SM-A305G',
       'SM-A305GN',
       'SM-A305YN',
-      'SM-A3050',
       'SM-A305N',
       'SM-A305GT',
     ],
@@ -2042,7 +2012,6 @@ export const samsungDevices: Device[] = [
     models: [
       'SM-N960F',
       'SM-N9600',
-      'SM-N960F',
       'SM-N960U',
       'SM-N960U1',
       'SM-N960N',
@@ -2072,7 +2041,7 @@ export const samsungDevices: Device[] = [
     name: 'Galaxy J6+',
     type: 'phone',
     releaseDate: null,
-    models: ['SM-J610F', 'SM-J610F', 'SM-J610G', 'SM-J610FN'],
+    models: ['SM-J610F', 'SM-J610G', 'SM-J610FN'],
   },
   {
     name: 'Galaxy J4 Core',
@@ -2153,22 +2122,13 @@ export const samsungDevices: Device[] = [
     name: 'Galaxy J8',
     type: 'phone',
     releaseDate: null,
-    models: ['SM-J810G', 'SM-J810F', 'J810Y', 'SM-J810Y', 'SM-J810GF', 'SM-J810M'],
+    models: ['SM-J810G', 'SM-J810F', 'SM-J810Y', 'SM-J810GF', 'SM-J810M'],
   },
   {
     name: 'Galaxy J6',
     type: 'phone',
     releaseDate: null,
-    models: [
-      'SM-J600G',
-      'SM-J600F',
-      'SM-J600G',
-      'SM-J600FN',
-      'SM-J600GF',
-      'SM-J600GT',
-      'SM-J600L',
-      'SM-J600N',
-    ],
+    models: ['SM-J600G', 'SM-J600F', 'SM-J600FN', 'SM-J600GT', 'SM-J600L', 'SM-J600N'],
   },
   {
     name: 'Galaxy J4',
@@ -2244,7 +2204,6 @@ export const samsungDevices: Device[] = [
     models: [
       'SM-G960F',
       'SM-G960',
-      'SM-G960F',
       'SM-G960U',
       'SM-G960W',
       'SM-G9600',
@@ -2259,7 +2218,7 @@ export const samsungDevices: Device[] = [
     name: 'Galaxy J2 Pro (2018)',
     type: 'phone',
     releaseDate: null,
-    models: ['SM-J250F', 'SM-J250G', 'SM-J250F', 'SM-J250M', 'SM-J250Y'],
+    models: ['SM-J250F', 'SM-J250G', 'SM-J250M', 'SM-J250Y'],
   },
   {
     name: 'Galaxy A8+ (2018)',
@@ -2271,7 +2230,7 @@ export const samsungDevices: Device[] = [
     name: 'Galaxy A8 (2018)',
     type: 'phone',
     releaseDate: null,
-    models: ['SM-A530F', 'SM-A530F', 'SM-A530K', 'SM-A530L', 'SM-A530S', 'SM-A530N', 'SM-A530W'],
+    models: ['SM-A530F', 'SM-A530K', 'SM-A530L', 'SM-A530S', 'SM-A530N', 'SM-A530W'],
   },
   {
     name: 'Galaxy J2 (2017)',
@@ -2353,7 +2312,7 @@ export const samsungDevices: Device[] = [
     name: 'Galaxy J7 (2017)',
     type: 'phone',
     releaseDate: null,
-    models: ['SM-J730F', 'SM-J730FM', 'SM-S727VL', 'SM-J730K'],
+    models: ['SM-J730F', 'SM-J730FM', 'SM-J730K'],
   },
   {
     name: 'Galaxy J7 Pro',
@@ -2383,8 +2342,6 @@ export const samsungDevices: Device[] = [
     releaseDate: null,
     models: [
       'SM-J330F',
-      'J330F',
-      'J330G',
       'SM-J330G',
       'SM-J330FN',
       'SM-J3308',
@@ -2430,7 +2387,6 @@ export const samsungDevices: Device[] = [
       'SC-02J',
       'SCV36',
       'SM-G950',
-      'G950F',
     ],
   },
   {
@@ -2455,7 +2411,6 @@ export const samsungDevices: Device[] = [
       'SM-G955N',
       'SM-G9550',
       'SC-03J',
-      'G955F',
     ],
   },
   {
@@ -2510,7 +2465,7 @@ export const samsungDevices: Device[] = [
     name: 'Galaxy A5 (2017)',
     type: 'phone',
     releaseDate: null,
-    models: ['SM-A520F', 'SM-A520F', 'SM-A520K', 'SM-A520L', 'SM-A520S', 'SM-A520W', 'SM-A520FD'],
+    models: ['SM-A520F', 'SM-A520K', 'SM-A520L', 'SM-A520S', 'SM-A520W', 'SM-A520FD'],
   },
   {
     name: 'Galaxy A3 (2017)',
@@ -2519,16 +2474,11 @@ export const samsungDevices: Device[] = [
     models: ['SM-A320F', 'SM-A320Y', 'SM-A320FL'],
   },
   {
-    name: 'Galaxy Grand Prime Plus',
-    type: 'phone',
-    releaseDate: null,
-    models: ['SM-G532F'],
-  },
-  {
     name: 'Galaxy J2 Prime',
     type: 'phone',
     releaseDate: null,
-    models: ['SM-G532G', 'SM-G532M', 'SM-G532G', 'SM-G532F', 'SM-G532MT'],
+    models: ['SM-G532G', 'SM-G532M', 'SM-G532F', 'SM-G532MT'],
+    aliases: ['Galaxy Grand Prime Plus'],
   },
   {
     name: 'Galaxy C9 Pro',
@@ -2540,7 +2490,7 @@ export const samsungDevices: Device[] = [
     name: 'Galaxy A8 (2016)',
     type: 'phone',
     releaseDate: null,
-    models: ['SM-A8100', 'SM-A810F', 'SM-A810F', 'SM-A810YZ', 'SM-A810S'],
+    models: ['SM-A8100', 'SM-A810F', 'SM-A810YZ', 'SM-A810S'],
   },
   {
     name: 'Galaxy On8',
@@ -2554,12 +2504,12 @@ export const samsungDevices: Device[] = [
     releaseDate: null,
     models: ['SM-G6100', 'SM-G610L', 'SM-G610K'],
   },
-  { name: 'Gear S3 classic', type: 'watch', releaseDate: null, models: [''] },
-  { name: 'Gear S3 frontier', type: 'watch', releaseDate: null, models: [''] },
+  { name: 'Gear S3 classic', type: 'watch', releaseDate: null, models: ['SM-R770'] },
+  { name: 'Gear S3 frontier', type: 'watch', releaseDate: null, models: ['SM-R760'] },
   {
     name: 'Gear S3 frontier LTE',
     type: 'watch',
     releaseDate: null,
-    models: [''],
+    models: ['SM-R765'],
   },
 ];

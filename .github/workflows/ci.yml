@@ -33,6 +33,9 @@ jobs:
       - name: Typecheck
         run: yarn typecheck
 
+      - name: Validate device data
+        run: yarn validate-data
+
       - name: Test with coverage
         run: yarn coverage
 
