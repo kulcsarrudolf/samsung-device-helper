@@ -4,6 +4,18 @@ import { Device } from '../types';
 
 export const watches: Device[] = [
   {
+    name: 'Galaxy Watch Ultra2',
+    releaseDate: '08-07-2026',
+    type: 'watch',
+    models: ['SM-L715F'],
+  },
+  {
+    name: 'Galaxy Watch9',
+    releaseDate: '08-07-2026',
+    type: 'watch',
+    models: ['SM-L340', 'SM-L350'],
+  },
+  {
     name: 'Galaxy Watch8 Classic',
     releaseDate: '07-25-2025',
     type: 'watch',

@@ -51,6 +51,26 @@ export const modelNameGroups: [string, string[]][] = [
   ['Galaxy A57', ['SM-A576B', 'SM-A576Q', 'SM-A576U1', 'SM-A576W', 'SM-A576Z', 'SM-A5760']],
   ['Galaxy A37', ['SM-A376E', 'SM-A376B', 'SM-A376U', 'SM-A376U1', 'SM-A376W', 'SM-A3760']],
   [
+    'Galaxy A27',
+    [
+      'SM-A276E',
+      'SM-A276E/DS',
+      'SM-A276E/DSN',
+      'SM-A276B',
+      'SM-A276B/DS',
+      'SM-A276B/DSN',
+      'SM-A276U',
+      'SM-A276U1',
+      'SM-A276W',
+    ],
+  ],
+  ['Galaxy M47', ['SM-M476B/DS', 'SM-M476B']],
+  ['Galaxy Z Fold8 Ultra', ['SM-F976B', 'SM-F976B/DS', 'SM-F976U', 'SM-F976U1']],
+  ['Galaxy Z Fold8', ['SM-F971B', 'SM-F971B/DS', 'SM-F971U', 'SM-F971U1']],
+  ['Galaxy Z Flip8', ['SM-F776B', 'SM-F776B/DS', 'SM-F776U', 'SM-F776U1']],
+  ['Galaxy Watch Ultra2', ['SM-L715F']],
+  ['Galaxy Watch9', ['SM-L340', 'SM-L350']],
+  [
     'Galaxy S25',
     [
       'SM-S931B',
