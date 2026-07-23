@@ -79,4 +79,79 @@ export const samsungDevices2026: Device[] = [
     type: 'phone',
     models: ['SM-A376E', 'SM-A376B', 'SM-A376U', 'SM-A376U1', 'SM-A376W', 'SM-A3760'],
   },
+  {
+    name: "Galaxy A27",
+    releaseDate: "07-03-2026",
+    type: "phone",
+    models: [
+      "SM-A276E",
+      "SM-A276E/DS",
+      "SM-A276E/DSN",
+      "SM-A276B",
+      "SM-A276B/DS",
+      "SM-A276B/DSN",
+      "SM-A276U",
+      "SM-A276U1",
+      "SM-A276W"
+    ],
+  },
+  {
+    name: "Galaxy M47",
+    releaseDate: "07-04-2026",
+    type: "phone",
+    models: [
+      "SM-M476B/DS",
+      "SM-M476B"
+    ],
+  },
+  {
+    name: "Galaxy Z Fold8 Ultra",
+    releaseDate: "07-22-2026",
+    type: "phone",
+    models: [
+      "SM-F976B",
+      "SM-F976B/DS",
+      "SM-F976U",
+      "SM-F976U1"
+    ],
+  },
+  {
+    name: "Galaxy Z Fold8",
+    releaseDate: "07-22-2026",
+    type: "phone",
+    models: [
+      "SM-F971B",
+      "SM-F971B/DS",
+      "SM-F971U",
+      "SM-F971U1"
+    ],
+  },
+  {
+    name: "Galaxy Z Flip8",
+    releaseDate: "07-22-2026",
+    type: "phone",
+    models: [
+      "SM-F776B",
+      "SM-F776B/DS",
+      "SM-F776U",
+      "SM-F776U1"
+    ],
+  },
+  {
+    name: "Galaxy Watch Ultra2",
+    releaseDate: "08-07-2026",
+    type: "watch",
+    models: [
+      "SM-L715F"
+    ],
+  },
+  {
+    name: "Galaxy Watch9",
+    releaseDate: "08-07-2026",
+    type: "watch",
+    models: [
+      "SM-L340",
+      "SM-L350"
+    ],
+  }
 ];
