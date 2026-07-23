@@ -1,6 +1,6 @@
 {
   "name": "samsung-device-helper",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "A utility to help you identify Samsung devices",
   "main": "dist/index.js",
   "module": "dist/index.mjs",
