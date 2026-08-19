@@ -122,6 +122,12 @@ export const phones: Device[] = [
     models: ['SM-F776B', 'SM-F776B/DS', 'SM-F776U', 'SM-F776U1'],
   },
   {
+    name: 'Galaxy F70 Pro',
+    releaseDate: '08-08-2026',
+    type: 'phone',
+    models: ['SM-E476B'],
+  },
+  {
     name: 'Galaxy S25',
     type: 'phone',
     releaseDate: '01-22-2025',
