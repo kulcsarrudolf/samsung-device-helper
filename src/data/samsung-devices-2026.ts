@@ -131,4 +131,10 @@ export const samsungDevices2026: Device[] = [
     type: 'watch',
     models: ['SM-L340', 'SM-L350'],
   },
+  {
+    name: 'Galaxy F70 Pro',
+    releaseDate: '08-08-2026',
+    type: 'phone',
+    models: ['SM-E476B'],
+  },
 ];
