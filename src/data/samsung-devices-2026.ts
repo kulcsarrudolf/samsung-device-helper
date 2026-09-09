@@ -137,4 +137,16 @@ export const samsungDevices2026: Device[] = [
     type: 'phone',
     models: ['SM-E476B'],
   },
+  {
+    name: 'Galaxy S26 FE',
+    releaseDate: '09-04-2026',
+    type: 'phone',
+    models: ['SM-S741B'],
+  },
+  {
+    name: 'Galaxy A07s',
+    releaseDate: '09-07-2026',
+    type: 'phone',
+    models: ['SM-A077F', 'SM-A077M'],
+  },
 ];
