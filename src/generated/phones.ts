@@ -128,6 +128,18 @@ export const phones: Device[] = [
     models: ['SM-E476B'],
   },
   {
+    name: 'Galaxy S26 FE',
+    releaseDate: '09-04-2026',
+    type: 'phone',
+    models: ['SM-S741B'],
+  },
+  {
+    name: 'Galaxy A07s',
+    releaseDate: '09-07-2026',
+    type: 'phone',
+    models: ['SM-A077F', 'SM-A077M'],
+  },
+  {
     name: 'Galaxy S25',
     type: 'phone',
     releaseDate: '01-22-2025',

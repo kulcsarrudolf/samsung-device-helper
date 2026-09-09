@@ -71,6 +71,8 @@ export const modelNameGroups: [string, string[]][] = [
   ['Galaxy Watch Ultra2', ['SM-L715F']],
   ['Galaxy Watch9', ['SM-L340', 'SM-L350']],
   ['Galaxy F70 Pro', ['SM-E476B']],
+  ['Galaxy S26 FE', ['SM-S741B']],
+  ['Galaxy A07s', ['SM-A077F', 'SM-A077M']],
   [
     'Galaxy S25',
     [
