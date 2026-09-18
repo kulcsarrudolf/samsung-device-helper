@@ -1,0 +1,55 @@
+name: Deploy demo site
+
+on:
+  push:
+    branches:
+      - release
+  workflow_dispatch:
+
+env:
+  HUSKY: 0
+
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    permissions:
+      contents: read
+      pages: write # Required to deploy to GitHub Pages
+      id-token: write # Required to verify the deployment origin
+
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v5
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v5
+        with:
+          node-version: "24"
+
+      - name: Install dependencies
+        run: yarn install --frozen-lockfile
+
+      - name: Build library
+        run: yarn build
+
+      - name: Build site
+        run: yarn build:site
+
+      - name: Configure Pages
+        uses: actions/configure-pages@v5
+
+      - name: Upload site artifact
+        uses: actions/upload-pages-artifact@v4
+
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4

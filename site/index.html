@@ -1,0 +1,381 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Samsung model number lookup | samsung-device-helper</title>
+    <meta
+      name="description"
+      content="Look up any Samsung model code (SM-G991B, SM-X910, SM-R960) and get the Galaxy marketing name. Powered by the samsung-device-helper npm package."
+    />
+    <meta property="og:title" content="Samsung model number lookup" />
+    <meta
+      property="og:description"
+      content="Turn Samsung model codes like SM-G991B into names like Galaxy S21 5G. Free lookup, plus an npm package with zero dependencies."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://kulcsarrudolf.github.io/samsung-device-helper/" />
+    <style>
+      :root {
+        color-scheme: light dark;
+        --bg: #f7f8fa;
+        --surface: #ffffff;
+        --text: #15181e;
+        --muted: #5c6472;
+        --border: #dfe3ea;
+        --accent: #1428a0;
+        --accent-text: #ffffff;
+        --code-bg: #eef0f5;
+      }
+      @media (prefers-color-scheme: dark) {
+        :root {
+          --bg: #0f1116;
+          --surface: #181b22;
+          --text: #e8eaf0;
+          --muted: #9aa3b2;
+          --border: #2a2f3a;
+          --accent: #8fa2ff;
+          --accent-text: #0f1116;
+          --code-bg: #222631;
+        }
+      }
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        margin: 0;
+        background: var(--bg);
+        color: var(--text);
+        font: 16px/1.5 system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+      }
+      main {
+        max-width: 960px;
+        margin: 0 auto;
+        padding: 32px 16px 64px;
+      }
+      h1 {
+        font-size: 1.9rem;
+        line-height: 1.2;
+        margin: 0 0 8px;
+      }
+      h2 {
+        font-size: 1.2rem;
+        margin: 0 0 12px;
+      }
+      p {
+        margin: 0 0 12px;
+      }
+      a {
+        color: var(--accent);
+      }
+      .muted {
+        color: var(--muted);
+      }
+      code,
+      pre {
+        font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+        font-size: 0.9em;
+        background: var(--code-bg);
+        border-radius: 6px;
+      }
+      code {
+        padding: 2px 6px;
+      }
+      pre {
+        padding: 12px 14px;
+        overflow-x: auto;
+        margin: 0 0 12px;
+      }
+      pre code {
+        padding: 0;
+        background: none;
+      }
+      .links {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 16px;
+        margin-bottom: 24px;
+      }
+      section {
+        background: var(--surface);
+        border: 1px solid var(--border);
+        border-radius: 12px;
+        padding: 20px;
+        margin-bottom: 20px;
+      }
+      input,
+      select {
+        font: inherit;
+        color: inherit;
+        background: var(--bg);
+        border: 1px solid var(--border);
+        border-radius: 8px;
+        padding: 10px 12px;
+        width: 100%;
+      }
+      input:focus-visible,
+      select:focus-visible {
+        outline: 2px solid var(--accent);
+        outline-offset: 1px;
+      }
+      #model-input {
+        font-size: 1.15rem;
+      }
+      #result {
+        margin-top: 16px;
+        min-height: 1.5em;
+      }
+      #result .name {
+        font-size: 1.5rem;
+        font-weight: 650;
+        line-height: 1.25;
+      }
+      dl {
+        display: grid;
+        grid-template-columns: max-content 1fr;
+        gap: 4px 16px;
+        margin: 12px 0 0;
+      }
+      dt {
+        color: var(--muted);
+      }
+      dd {
+        margin: 0;
+        overflow-wrap: anywhere;
+      }
+      .filters {
+        display: grid;
+        grid-template-columns: 1fr 160px;
+        gap: 12px;
+        margin-bottom: 12px;
+      }
+      .table-wrap {
+        overflow-x: auto;
+      }
+      table {
+        width: 100%;
+        border-collapse: collapse;
+        font-size: 0.93rem;
+      }
+      th,
+      td {
+        text-align: left;
+        vertical-align: top;
+        padding: 8px 10px;
+        border-bottom: 1px solid var(--border);
+      }
+      th {
+        color: var(--muted);
+        font-weight: 600;
+        white-space: nowrap;
+      }
+      td.models {
+        font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+        font-size: 0.85rem;
+        overflow-wrap: anywhere;
+      }
+      td.nowrap {
+        white-space: nowrap;
+      }
+      footer {
+        color: var(--muted);
+        font-size: 0.9rem;
+      }
+      @media (max-width: 560px) {
+        h1 {
+          font-size: 1.5rem;
+        }
+        .filters {
+          grid-template-columns: 1fr;
+        }
+        section {
+          padding: 16px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <h1>Samsung model number lookup</h1>
+      <p class="muted">
+        Turn a model code like <code>SM-G991B</code> into a name like Galaxy S21 5G.
+        <span id="device-count"></span>
+      </p>
+      <div class="links">
+        <a href="https://www.npmjs.com/package/samsung-device-helper">npm</a>
+        <a href="https://github.com/kulcsarrudolf/samsung-device-helper">GitHub</a>
+        <a href="https://socket.dev/npm/package/samsung-device-helper">Socket report</a>
+      </div>
+
+      <section aria-labelledby="lookup-heading">
+        <h2 id="lookup-heading">Look up a model code</h2>
+        <label for="model-input" class="muted">Model code (case and spaces do not matter)</label>
+        <input
+          id="model-input"
+          type="text"
+          placeholder="SM-G991B"
+          autocomplete="off"
+          autocapitalize="characters"
+          spellcheck="false"
+        />
+        <div id="result" aria-live="polite"></div>
+      </section>
+
+      <section aria-labelledby="usage-heading">
+        <h2 id="usage-heading">Use it in your project</h2>
+        <pre><code>npm install samsung-device-helper</code></pre>
+        <pre><code>import { getNameByModel } from 'samsung-device-helper/model-names';
+
+getNameByModel('SM-G991B'); // "Galaxy S21 5G"</code></pre>
+        <p class="muted">
+          Zero dependencies, TypeScript types included, ESM and CommonJS. This page runs the exact
+          build that is published to npm.
+        </p>
+      </section>
+
+      <section aria-labelledby="catalog-heading">
+        <h2 id="catalog-heading">All devices</h2>
+        <div class="filters">
+          <input
+            id="filter-text"
+            type="search"
+            placeholder="Filter by name or model code"
+            aria-label="Filter by name or model code"
+          />
+          <select id="filter-type" aria-label="Filter by device type">
+            <option value="">All types</option>
+            <option value="phone">Phones</option>
+            <option value="tablet">Tablets</option>
+            <option value="watch">Watches</option>
+          </select>
+        </div>
+        <p id="catalog-count" class="muted" aria-live="polite"></p>
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr>
+                <th>Name</th>
+                <th>Type</th>
+                <th>Released</th>
+                <th>Model codes</th>
+              </tr>
+            </thead>
+            <tbody id="catalog-body"></tbody>
+          </table>
+        </div>
+      </section>
+
+      <footer>
+        MIT licensed. Not affiliated with Samsung. Missing a device?
+        <a href="https://github.com/kulcsarrudolf/samsung-device-helper/issues">Open an issue</a>.
+      </footer>
+    </main>
+
+    <script type="module">
+      import { getDeviceByModel, getAllSamsungDevices } from './lib/index.mjs';
+
+      const el = (tag, text, className) => {
+        const node = document.createElement(tag);
+        if (text !== undefined) node.textContent = text;
+        if (className) node.className = className;
+        return node;
+      };
+
+      // Library dates are MM-DD-YYYY strings, or null when unknown.
+      const parseReleaseDate = (value) => {
+        if (!value) return null;
+        const [month, day, year] = value.split('-').map(Number);
+        return new Date(Date.UTC(year, month - 1, day));
+      };
+
+      const dateFormat = new Intl.DateTimeFormat('en', {
+        year: 'numeric',
+        month: 'short',
+        timeZone: 'UTC',
+      });
+      const formatReleaseDate = (value) => {
+        const date = parseReleaseDate(value);
+        return date ? dateFormat.format(date) : 'Unknown';
+      };
+
+      const devices = getAllSamsungDevices().sort((a, b) => {
+        const aTime = parseReleaseDate(a.releaseDate)?.getTime() ?? 0;
+        const bTime = parseReleaseDate(b.releaseDate)?.getTime() ?? 0;
+        return bTime - aTime || a.name.localeCompare(b.name);
+      });
+
+      document.getElementById('device-count').textContent =
+        `${devices.length} phones, tablets, and watches in the catalog.`;
+
+      // Lookup
+      const modelInput = document.getElementById('model-input');
+      const result = document.getElementById('result');
+
+      const renderResult = () => {
+        const query = modelInput.value.trim();
+        result.replaceChildren();
+        if (!query) return;
+
+        const device = getDeviceByModel(query);
+        if (!device) {
+          result.append(el('p', `No device found for "${query}".`, 'muted'));
+          return;
+        }
+
+        const details = el('dl');
+        const addRow = (label, value) => details.append(el('dt', label), el('dd', value));
+        addRow('Type', device.type ?? 'Unknown');
+        addRow('Released', formatReleaseDate(device.releaseDate));
+        if (device.aliases?.length) addRow('Also known as', device.aliases.join(', '));
+        addRow('Model codes', device.models.join(', '));
+        result.append(el('div', device.name, 'name'), details);
+      };
+      modelInput.addEventListener('input', renderResult);
+
+      // Catalog
+      const filterText = document.getElementById('filter-text');
+      const filterType = document.getElementById('filter-type');
+      const catalogBody = document.getElementById('catalog-body');
+      const catalogCount = document.getElementById('catalog-count');
+
+      const searchIndex = new Map(
+        devices.map((device) => [
+          device,
+          [device.name, ...(device.aliases ?? []), ...device.models].join(' ').toLowerCase(),
+        ]),
+      );
+
+      const renderCatalog = () => {
+        const text = filterText.value.trim().toLowerCase();
+        const type = filterType.value;
+        const matches = devices.filter(
+          (device) => (!type || device.type === type) && (!text || searchIndex.get(device).includes(text)),
+        );
+
+        catalogBody.replaceChildren(
+          ...matches.map((device) => {
+            const row = el('tr');
+            row.append(
+              el('td', device.name),
+              el('td', device.type ?? ''),
+              el('td', formatReleaseDate(device.releaseDate), 'nowrap'),
+              el('td', device.models.join(', '), 'models'),
+            );
+            return row;
+          }),
+        );
+        catalogCount.textContent = `Showing ${matches.length} of ${devices.length} devices.`;
+      };
+      filterText.addEventListener('input', renderCatalog);
+      filterType.addEventListener('change', renderCatalog);
+      renderCatalog();
+
+      // Support shareable links like ?model=SM-G991B
+      const initialModel = new URLSearchParams(location.search).get('model');
+      if (initialModel) {
+        modelInput.value = initialModel;
+        renderResult();
+      }
+    </script>
+  </body>
+</html>

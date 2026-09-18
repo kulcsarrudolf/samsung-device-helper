@@ -38,6 +38,7 @@
   ],
   "scripts": {
     "build": "tsup",
+    "build:site": "bash scripts/build-site.sh",
     "prebuild": "yarn generate-data",
     "generate-data": "tsx scripts/generate-data.ts && prettier --write 'src/generated/**/*.ts'",
     "test": "vitest run",
