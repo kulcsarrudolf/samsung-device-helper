@@ -30,12 +30,19 @@ The catalog lives in hand-maintained per-year files under `src/data/`.
 After editing them, run `yarn generate-data` to refresh the derived modules in
 `src/generated/` (CI fails if they are stale), and `yarn validate-data` to check integrity.
 
+## Demo site
+
+The [demo site](https://kulcsarrudolf.github.io/samsung-device-helper/) is the single static page in `site/index.html`.
+It imports the library's own ESM build, so it needs no framework and no extra dependencies.
+To preview it, run `yarn build && yarn build:site` and serve the `_site/` folder with any static file server.
+The "Deploy demo site" workflow publishes it to GitHub Pages on every push to `release`.
+
 ## Submitting changes
 
 1. Create a feature branch.
 2. Make your change with tests where appropriate.
 3. Push and open a pull request against `main`. CI runs lint, format check, typecheck,
-   data validation, coverage, and build on Node 20 and 22.
+   data validation, coverage, and build on Node 22 and 24.
 
 ## Releases
 

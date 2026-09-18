@@ -5,12 +5,26 @@
 [![downloads](https://img.shields.io/npm/dt/samsung-device-helper)](https://www.npmjs.com/package/samsung-device-helper)
 [![GitHub Stars](https://img.shields.io/github/stars/kulcsarrudolf/samsung-device-helper?style=social)](https://github.com/kulcsarrudolf/samsung-device-helper)
 [![CI](https://img.shields.io/github/actions/workflow/status/kulcsarrudolf/samsung-device-helper/ci.yml?label=CI)](https://github.com/kulcsarrudolf/samsung-device-helper/actions/workflows/ci.yml)
+[![Socket](https://badge.socket.dev/npm/package/samsung-device-helper)](https://socket.dev/npm/package/samsung-device-helper)
 
-`samsung-device-helper` is an npm package designed to provide a comprehensive list of Samsung devices, including phones, tablets, and watches. The package offers utility functions to retrieve device names by model and fetch lists of devices by category. **Note:** the list of phones includes models released after 2017, ensuring up-to-date information on the latest Samsung phones.
+Samsung devices report a model code such as `SM-G991B` in user agents, analytics, and crash reports.
+`samsung-device-helper` turns that code into the name people know: "Galaxy S21 5G".
+
+```javascript
+import { getNameByModel } from "samsung-device-helper";
+
+getNameByModel("SM-G991B"); // "Galaxy S21 5G"
+getNameByModel("sm-s928b "); // "Galaxy S24 Ultra" (case and whitespace are ignored)
+getNameByModel("SM-UNKNOWN"); // "SM-UNKNOWN" (unknown codes are returned as is)
+```
+
+Try it in the browser: [model code lookup](https://kulcsarrudolf.github.io/samsung-device-helper/).
+
+The catalog covers phones released after 2017, plus tablets and watches, and is updated for 2026 devices.
+The package has zero dependencies and no install scripts.
+It ships TypeScript types, ESM and CommonJS builds, and is published from GitHub Actions with [npm provenance](https://docs.npmjs.com/generating-provenance-statements).
 
 ## Installation
-
-To install the package, run:
 
 ```bash
 npm install samsung-device-helper
@@ -18,70 +32,71 @@ npm install samsung-device-helper
 
 ## Usage
 
-Here's a quick guide on how to use the `samsung-device-helper` package in your project.
-
-### Importing the Package
-
-First, import the necessary functions from the package:
+ESM and TypeScript:
 
 ```javascript
-const {
-  getNameByModel,
-  getAllSamsungPhones,
-  getAllSamsungTablets,
-  getAllSamsungWatches,
-  getAllSamsungDevices,
-} = require("samsung-device-helper");
+import { getNameByModel, getDeviceByModel, getAllSamsungPhones } from "samsung-device-helper";
 ```
 
-### Functions
-
-#### `getNameByModel(model: string): string`
-
-This function takes a device model as an argument and returns the corresponding device name. If the model is not recognized, it returns the model itself.
+CommonJS:
 
 ```javascript
-const deviceName = getNameByModel("SM-G991B");
-console.log(deviceName); // Outputs: "Galaxy S21 5G"
+const { getNameByModel, getDeviceByModel, getAllSamsungPhones } = require("samsung-device-helper");
 ```
 
-#### `getAllSamsungPhones(): Device[]`
+### `getNameByModel(model: string): string`
 
-Returns an array of all Samsung phones.
+Returns the marketing name for a model code.
+If the code is not in the catalog, it returns the code itself, so the result is always safe to display.
 
 ```javascript
-const phones = getAllSamsungPhones();
-console.log(phones);
+getNameByModel("SM-G991B"); // "Galaxy S21 5G"
 ```
 
-#### `getAllSamsungTablets(): Device[]`
+### `getDeviceByModel(model: string): Device | undefined`
 
-Returns an array of all Samsung tablets.
+Returns the full catalog entry for a model code, or `undefined` when the code is unknown.
+It works for phones, tablets, and watches.
 
 ```javascript
-const tablets = getAllSamsungTablets();
-console.log(tablets);
+getDeviceByModel("SM-G991B");
+// {
+//   name: "Galaxy S21 5G",
+//   type: "phone",
+//   releaseDate: "01-29-2021",
+//   models: ["SM-G991B", "SM-G991B/DS", "SM-G991U", ...]
+// }
 ```
 
-#### `getAllSamsungWatches(): Device[]`
+`getPhoneByModel` is a deprecated alias of `getDeviceByModel`.
 
-Returns an array of all Samsung watches.
+### Listing devices
+
+`getAllSamsungPhones()`, `getAllSamsungTablets()`, and `getAllSamsungWatches()` each return a `Device[]` with every device of that type.
+`getAllSamsungDevices()` returns the whole catalog.
 
 ```javascript
 const watches = getAllSamsungWatches();
-console.log(watches);
+watches.map((watch) => watch.name); // ["Galaxy Watch Ultra2", "Galaxy Watch9", ...]
 ```
 
-#### `getAllSamsungDevices(): Device[]`
+### The `Device` type
 
-Returns an array of all Samsung devices, including phones, tablets, and watches.
+```typescript
+type DeviceType = "phone" | "tablet" | "watch";
 
-```javascript
-const devices = getAllSamsungDevices();
-console.log(devices);
+type Device = {
+  name: string;
+  /** Release date in MM-DD-YYYY format, or null when unknown. */
+  releaseDate: string | null;
+  models: string[];
+  type?: DeviceType;
+  /** Alternate marketing names for the same hardware (e.g. regional variants). */
+  aliases?: string[];
+};
 ```
 
-### Smaller bundles with subpath imports
+## Smaller bundles with subpath imports
 
 The main entry ships the full device catalog.
 If you only need part of it, import from a subpath so your bundle carries only that data:
@@ -100,18 +115,12 @@ All subpath functions behave identically to their main-entry counterparts.
 
 ## Contributing
 
-If you'd like to contribute to this project, please submit a pull request or open an issue on GitHub.
+Missing a device or found a wrong model code?
+Open an issue or a pull request.
+[CONTRIBUTING.md](https://github.com/kulcsarrudolf/samsung-device-helper/blob/main/CONTRIBUTING.md) explains where the device data lives and how to validate it.
+
+To report a security problem, see [SECURITY.md](https://github.com/kulcsarrudolf/samsung-device-helper/blob/main/SECURITY.md).
 
 ## License
 
-This project is licensed under the MIT License.
-
----
-
-For more information, visit the [GitHub repository](https://github.com/kulcsarrudolf/samsung-device-helper).
-
-## Acknowledgments
-
-This package is inspired by the need to simplify the retrieval and management of Samsung device data for developers.
-
-Happy coding!
+MIT. This project is not affiliated with Samsung.

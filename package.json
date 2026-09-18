@@ -1,7 +1,7 @@
 {
   "name": "samsung-device-helper",
   "version": "0.1.3",
-  "description": "A utility to help you identify Samsung devices",
+  "description": "Map Samsung model codes (SM-G991B) to Galaxy marketing names, with typed catalogs of phones, tablets, and watches",
   "main": "dist/index.js",
   "module": "dist/index.mjs",
   "types": "dist/index.d.ts",
@@ -62,16 +62,23 @@
   },
   "keywords": [
     "samsung",
-    "device",
-    "helper",
-    "utility",
-    "device identification",
-    "device model",
-    "device name",
-    "device type"
+    "galaxy",
+    "samsung-galaxy",
+    "model-number",
+    "model-code",
+    "sm-",
+    "device-name",
+    "device-model",
+    "device-detection",
+    "user-agent",
+    "android",
+    "tablet",
+    "galaxy-watch",
+    "typescript"
   ],
   "author": "Kulcsár Rudolf",
   "license": "MIT",
+  "homepage": "https://kulcsarrudolf.github.io/samsung-device-helper/",
   "bugs": {
     "url": "https://github.com/kulcsarrudolf/samsung-device-helper/issues"
   },
