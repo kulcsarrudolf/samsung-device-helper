@@ -149,4 +149,40 @@ export const samsungDevices2026: Device[] = [
     type: 'phone',
     models: ['SM-A077F', 'SM-A077M'],
   },
+  {
+    name: 'Galaxy A08 4G',
+    releaseDate: '09-15-2026',
+    type: 'phone',
+    models: ['SM-A085F', 'SM-A085F/DS'],
+  },
+  {
+    name: 'Galaxy A18 4G',
+    releaseDate: '09-18-2026',
+    type: 'phone',
+    models: ['SM-A185F', 'SM-A185F/DS', 'SM-A185M', 'SM-A185M/DS', 'SM-A185F/DSB'],
+  },
+  {
+    name: 'Galaxy Tab S12 Ultra',
+    releaseDate: '10-07-2026',
+    type: 'tablet',
+    models: ['SM-X940', 'SM-X946'],
+  },
+  {
+    name: 'Galaxy Tab S12+',
+    releaseDate: '10-07-2026',
+    type: 'tablet',
+    models: ['SM-X840', 'SM-X846'],
+  },
+  {
+    name: 'Galaxy F08',
+    releaseDate: '10-08-2026',
+    type: 'phone',
+    models: ['SM-E085F', 'SM-E085F/DS'],
+  },
+  {
+    name: 'Galaxy M08',
+    releaseDate: '10-08-2026',
+    type: 'phone',
+    models: ['SM-M085F', 'SM-M085F/DS'],
+  },
 ];

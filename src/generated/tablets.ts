@@ -4,6 +4,18 @@ import { Device } from '../types';
 
 export const tablets: Device[] = [
   {
+    name: 'Galaxy Tab S12 Ultra',
+    releaseDate: '10-07-2026',
+    type: 'tablet',
+    models: ['SM-X940', 'SM-X946'],
+  },
+  {
+    name: 'Galaxy Tab S12+',
+    releaseDate: '10-07-2026',
+    type: 'tablet',
+    models: ['SM-X840', 'SM-X846'],
+  },
+  {
     name: 'Galaxy Tab S10 FE',
     releaseDate: '04-03-2025',
     type: 'tablet',
