@@ -140,6 +140,30 @@ export const phones: Device[] = [
     models: ['SM-A077F', 'SM-A077M'],
   },
   {
+    name: 'Galaxy A08 4G',
+    releaseDate: '09-15-2026',
+    type: 'phone',
+    models: ['SM-A085F', 'SM-A085F/DS'],
+  },
+  {
+    name: 'Galaxy A18 4G',
+    releaseDate: '09-18-2026',
+    type: 'phone',
+    models: ['SM-A185F', 'SM-A185F/DS', 'SM-A185M', 'SM-A185M/DS', 'SM-A185F/DSB'],
+  },
+  {
+    name: 'Galaxy F08',
+    releaseDate: '10-08-2026',
+    type: 'phone',
+    models: ['SM-E085F', 'SM-E085F/DS'],
+  },
+  {
+    name: 'Galaxy M08',
+    releaseDate: '10-08-2026',
+    type: 'phone',
+    models: ['SM-M085F', 'SM-M085F/DS'],
+  },
+  {
     name: 'Galaxy S25',
     type: 'phone',
     releaseDate: '01-22-2025',

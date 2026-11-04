@@ -73,6 +73,12 @@ export const modelNameGroups: [string, string[]][] = [
   ['Galaxy F70 Pro', ['SM-E476B']],
   ['Galaxy S26 FE', ['SM-S741B']],
   ['Galaxy A07s', ['SM-A077F', 'SM-A077M']],
+  ['Galaxy A08 4G', ['SM-A085F', 'SM-A085F/DS']],
+  ['Galaxy A18 4G', ['SM-A185F', 'SM-A185F/DS', 'SM-A185M', 'SM-A185M/DS', 'SM-A185F/DSB']],
+  ['Galaxy Tab S12 Ultra', ['SM-X940', 'SM-X946']],
+  ['Galaxy Tab S12+', ['SM-X840', 'SM-X846']],
+  ['Galaxy F08', ['SM-E085F', 'SM-E085F/DS']],
+  ['Galaxy M08', ['SM-M085F', 'SM-M085F/DS']],
   [
     'Galaxy S25',
     [
