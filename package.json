@@ -1,6 +1,6 @@
 {
   "name": "samsung-device-helper",
-  "version": "0.1.3",
+  "version": "0.1.4",
   "description": "Map Samsung model codes (SM-G991B) to Galaxy marketing names, with typed catalogs of phones, tablets, and watches",
   "main": "dist/index.js",
   "module": "dist/index.mjs",
